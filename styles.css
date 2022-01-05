@@ -38,7 +38,7 @@
   height: 100px;
   left: 16px;
   top: 104px;
-  font-family: Playfair Display;
+  font-family: Playfair Display var(custom-font);
   font-style: normal;
   font-weight: normal;
   font-size: 80px;
