@@ -2,11 +2,13 @@
 
 # Project Name
 
-> My new Potfolio.
+> My new Portfolio.
 <!-- ![screenshot](./hello_microverse.png) -->
 
 Additional description about the project and its features.
-
+## Screenshots 📷📲
+![screenshot](./header_screenshot.png)
+![screenshot](./headline_screeshot.png)
 ## Built With
 
 - HTML
@@ -46,7 +48,7 @@ Additional description about the project and its features.
 
 👤 **Author**
 
-- GitHub: [@githubhandle](https://github.com/Bavon101)
+- GitHub: [@Bavon101](https://github.com/Bavon101)
 <!-- - Twitter: [@twitterhandle](https://twitter.com/twitterhandle) -->
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/akumu-bavon-335416193/)
 
