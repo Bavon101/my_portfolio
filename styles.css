@@ -1,0 +1,27 @@
+.header { display: flex; justify-content: space-between; }
+.header_image {
+
+	position: absolute;
+	width: 111px;
+	height: 74px;
+	left: 0px;
+	top: 0px;
+
+}
+
+.body {
+
+	background: #E5E5E5;
+}
+
+.ic_image {
+
+	width: 20px;
+	height: 14px;
+	left: 284px;
+	top: 19px;
+	justify-content: flex-end;
+	margin-left: auto;
+	
+}
+
