@@ -1,16 +1,14 @@
-.body { background: #FFFFFF; }
-.header { display: flex; justify-content: space-between; }
+.body { background: #ffffff; }
+.header { 
+	display: flex; 
+	justify-content: space-between;
+}
 .header_image {
-
 	position: absolute;
 	width: 111px;
 	height: 74px;
-	left: 0px;
-	top: 0px;
-
 }
 .headline {
-
 	display: flex;
 	position: absolute;
 	width: 100%;
@@ -19,21 +17,16 @@
 	top: 104px;
 	flex-direction: column;
 	justify-content: space-around;
-	
-
 }
 .ic_image {
-
 	width: 20px;
 	height: 14px;
 	left: 284px;
 	top: 19px;
 	justify-content: flex-end;
 	margin-left: auto;
-	
 }
 .name {
-
 	width: 220px;
 	height: 100px;
 	left: 16px;
@@ -44,10 +37,8 @@
 	font-size: 80px;
 	line-height: 100%;
 	color: #1A2236;
-
 }
 .intro {
-
 	width: 288px;
 	height: 126px;
 	left: 16px;
@@ -59,29 +50,24 @@
 	line-height: 21px;
 	letter-spacing: -0.01em;
 	color: #1A2236;
-
 }
 .colaboration_button {
-
 	position: absolute;
 	left: 5%;
 	right: 5%;
 	top: 7.94%;
 	bottom: 91.04%;
-
 }
 .colaboration_button_rectangle {
-
 	position: absolute;
 	width: 288px;
 	height: 50px;
 	left: 16px;
 	top: 390px;
 	background: #1A2236;
-	color: #FFFFFF;
+	color: #ffffff;
 }
 .button_text_style {
-	
 	width: auto;
 	height: 26.47px;
 	left: 58px;
@@ -92,22 +78,15 @@
 	font-size: 16px;
 	line-height: 24px;
 	text-align: center;
-	color: #FFFFFF;
-
+	color: #ffffff;
 }
 .bottom_geometry {
-
 	position: absolute;
 	width: 375px;
 	height: 160px;
-	left: 0px;
-	right: 0;
 	top: 492px;
-	
-
 }
 .colaboration_button_rectangle:hover:enabled {
-
 	position: absolute;
 	width: 288px;
 	height: 50px;
@@ -115,11 +94,10 @@
 	top: 390px;
 	border: 1px solid #1A2236;
 	box-sizing: border-box;
-	background-color: #FFFFFF;
+	background-color: #ffffff;
 	color: #1A2236;
 }
 .colaboration_button_rectangle:active:enabled {
-	
 	position: absolute;
 	width: 288px;
 	height: 50px;
@@ -128,6 +106,5 @@
 	border: 2px solid #1A2236;
 	box-sizing: border-box;
 	color: #1A2236;
-	background-color: #FFFFFF;
-
+	background-color: #ffffff;
 }
