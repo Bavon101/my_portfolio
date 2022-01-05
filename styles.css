@@ -32,7 +32,7 @@
   justify-content: flex-end;
   margin-left: auto;
   background-image: url("ic_menu.svg");
-  border: 0cm;
+  border: 0;
 }
 
 .name {
