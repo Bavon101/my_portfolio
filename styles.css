@@ -31,6 +31,8 @@
   top: 19px;
   justify-content: flex-end;
   margin-left: auto;
+  background-image: url("ic_menu.svg");
+  border: 0cm;
 }
 
 .name {
@@ -97,6 +99,7 @@
   width: 375px;
   height: 160px;
   top: 492px;
+  background-image: url("image_geometry_2.svg");
 }
 
 .colaboration_button_rectangle:hover:enabled {
