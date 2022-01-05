@@ -8,7 +8,6 @@
 	top: 0px;
 
 }
-
 .body {
 
 	background: #FFFFFF;
@@ -37,7 +36,6 @@
 	margin-left: auto;
 	
 }
-
 .name {
 
 	width: 220px;
@@ -52,7 +50,6 @@
 	color: #1A2236;
 
 }
-
 .intro {
 
 	width: 288px;
@@ -68,7 +65,6 @@
 	color: #1A2236;
 
 }
-
 .colaboration_button {
 
 	position: absolute;
@@ -78,7 +74,6 @@
 	bottom: 91.04%;
 
 }
-
 .colaboration_button_rectangle {
 
 	position: absolute;
@@ -88,7 +83,6 @@
 	top: 390px;
 	background: #1A2236;
 }
-
 .button_text_style {
 	
 	width: auto;
@@ -104,7 +98,6 @@
 	color: #FFFFFF;
 
 }
-
 .bottom_geometry {
 
 	position: absolute;
@@ -116,4 +109,24 @@
 	
 
 }
+.colaboration_button_rectangle:hover:enabled {
 
+	position: absolute;
+	width: 288px;
+	height: 50px;
+	left: 16px;
+	top: 390px;
+	border: 1px solid #1A2236;
+	box-sizing: border-box;
+}
+.colaboration_button_rectangle:active:enabled {
+	
+	position: absolute;
+	width: 288px;
+	height: 50px;
+	left: 16px;
+	top: 390px;
+	border: 2px solid #1A2236;
+	box-sizing: border-box;
+
+}
