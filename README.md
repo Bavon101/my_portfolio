@@ -8,6 +8,7 @@
 Additional description about the project and its features.
 ## Screenshots 📷📲
 ![screenshot](./header_screenshot.png)
+![screenshot](./headline_screeshot.png)
 ## Built With
 
 - HTML
