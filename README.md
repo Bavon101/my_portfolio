@@ -10,6 +10,7 @@ Additional description about the project and its features.
 ![screenshot](./header_screenshot.png)
 ![screenshot](./headline_screeshot.png)
 ![screenshot](./about_sreenshot.png)
+![screenshot](./projects_screenshot.png)
 ## Built With
 
 - HTML
