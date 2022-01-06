@@ -125,3 +125,119 @@
   color: #1a2236;
   background-color: hsl(0, 0%, 100%);
 }
+
+.about_section {
+	position: absolute;
+	display: flex;
+    flex-direction: column;
+	width: 400px;
+	height: 1217px;
+	left: 15px;
+	top: 1200px;
+	padding: 5px;
+}
+
+.about_title {
+	font-family: Playfair Display;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 50px;
+	line-height: 100%;
+	color: #1A2236;
+}
+
+.about_paragraph {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 21px;
+	color: #1A2236;
+}
+
+.resume_button {
+	display: flex;
+	width: 380px;
+	height: 50px;
+	left: 16px;
+	background: #1A2236;
+	align-items: center;
+	justify-content: center;
+}
+
+.get_cv_text {
+	width: 86px;
+	height: 24px;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	color: hsl(0, 0%, 100%);
+}
+
+.download_icon {
+	width: 27px;
+	height: 24px;
+	left: 201px;
+	background-image: url("ic_download.svg");
+}
+
+.my_langauges_card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 380px;
+	height: 289px;
+	left: 16px;
+	background: #1C528A;
+	margin-top: 50px;
+}
+
+.my_frameworks_card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 380px;
+	height: 289px;
+	left: 16px;
+	background: #E2505C;
+	margin-top: 25px;
+}
+
+.my_skills_card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 380px;
+	height: 289px;
+	left: 16px;
+	background: #FEBF52;
+	margin-top: 25px;
+}
+
+.langauge_label {
+	width: 116px;
+	height: 30px;
+	left: 66px;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 20px;
+	line-height: 30px;
+	color: hsl(0, 0%, 100%);
+}
+
+.my_langaues_text_style {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 27px;
+	letter-spacing: -0.0525em;
+	color: hsl(0, 0%, 100%);
+}
