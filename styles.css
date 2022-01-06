@@ -282,20 +282,21 @@
   justify-content: center;
   width: 320px;
   height: 342px;
-  left: 0px;
+  left: 0;
 }
 
 .project_image {
   width: 320px;
   height: 186px;
-  left: 0px;
+  left: 0;
   background: url("project_image.svg");
   border: 0.333333px solid rgba(255, 255, 255, 0.1);
 }
+
 .project_image_1 {
   width: 320px;
   height: 186px;
-  left: 0px;
+  left: 0;
   background: url("project_image_1.svg");
   border: 0.333333px solid rgba(255, 255, 255, 0.1);
 }
@@ -305,7 +306,7 @@
   flex-direction: column;
   width: 320px;
   height: 156px;
-  left: 0px;
+  left: 0;
   background: #1a2236;
   border: 0.333333px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(1px);
@@ -346,7 +347,7 @@
   font-size: 16px;
   line-height: 24px;
   text-align: center;
-  color: #ffffff;
+  color: hsl(0, 0%, 100%);
 }
 
 .arrow_forward {
