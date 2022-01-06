@@ -133,12 +133,12 @@
 	width: 400px;
 	height: 1217px;
 	left: 15px;
-	top: 1200px;
+	top: 1600px;
 	padding: 5px;
 }
 
 .about_title {
-	font-family: Playfair Display;
+	font-family: Playfair Display, Arial, Verdana, Tahoma, sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 50px;
@@ -147,7 +147,7 @@
 }
 
 .about_paragraph {
-	font-family: Poppins;
+	font-family: Poppins, Arial, Verdana, Tahoma, sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;
@@ -168,7 +168,7 @@
 .get_cv_text {
 	width: 86px;
 	height: 24px;
-	font-family: Poppins;
+	font-family: Poppins, Arial, Verdana, Tahoma, sans-serif;
 	font-style: normal;
 	font-weight: 500;
 	font-size: 16px;
@@ -194,6 +194,10 @@
 	left: 16px;
 	background: #1C528A;
 	margin-top: 50px;
+	background-image: url("ic_languages_mob-1.svg");
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-position-x: right;
 }
 
 .my_frameworks_card {
@@ -206,6 +210,10 @@
 	left: 16px;
 	background: #E2505C;
 	margin-top: 25px;
+	background-image: url("frameworks.svg");
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-position-x: right;
 }
 
 .my_skills_card {
@@ -218,13 +226,17 @@
 	left: 16px;
 	background: #FEBF52;
 	margin-top: 25px;
+	background-image: url("ic_skills.svg");
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-position-x: right;
 }
 
 .langauge_label {
 	width: 116px;
 	height: 30px;
 	left: 66px;
-	font-family: Poppins;
+	font-family: Poppins, Arial, Verdana, Tahoma, sans-serif;
 	font-style: normal;
 	font-weight: 800;
 	font-size: 20px;
@@ -233,11 +245,145 @@
 }
 
 .my_langaues_text_style {
-	font-family: Poppins;
+	font-family: Poppins, Arial, Verdana, Tahoma, sans-serif;
 	font-style: normal;
 	font-weight: 600;
 	font-size: 18px;
 	line-height: 27px;
 	letter-spacing: -0.0525em;
 	color: hsl(0, 0%, 100%);
+}
+
+.project_section {
+	/* position: absolute; */
+	position: relative;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	top: 650px;
+}
+
+.projects_label{
+	width: 181px;
+	height: 50px;
+	left: 16px;
+	font-family: Playfair Display, Arial, Verdana, Tahoma, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 50px;
+	line-height: 100%;
+	color: #1A2236;
+}
+
+.project_card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 320px;
+	height: 342px;
+	left: 0px;	
+}
+
+.project_image {
+	width: 320px;
+	height: 186px;
+	left: 0px;
+	background: url("project_image.svg");
+	border: 0.333333px solid rgba(255, 255, 255, 0.1);
+}
+.project_image_1 {
+	width: 320px;
+	height: 186px;
+	left: 0px;
+	background: url("project_image_1.svg");
+	border: 0.333333px solid rgba(255, 255, 255, 0.1);
+}
+
+.project_details_card {
+	display: flex;
+	flex-direction: column;
+	width: 320px;
+	height: 156px;
+	left: 0px;
+	background: #1A2236;
+	border: 0.333333px solid rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(1px);
+	
+}
+
+.project_name {
+	width: 264px;
+	height: 16px;
+	left: 20px;
+	font-family: Poppins, Arial, Verdana, Tahoma, sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 80%;
+	color: hsl(0, 0%, 100%);
+	margin-left: 25px;
+}
+
+.see_project {
+	display: flex;
+	align-content: space-around;
+	align-items: center;
+	width: 178px;
+	height: 44px;
+	left: 20px;
+	margin-left: 25px;
+	margin-top: 20px;
+	border: 1px solid hsl(0, 0%, 100%);
+}
+
+.see_project_text {
+	width: 124px;
+	height: 24px;
+	left: 30px;
+	font-family: Poppins, Arial, Verdana, Tahoma, sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.arrow_forward {
+	width: 20.57px;
+	height: 15.35px;
+	left: 166px;
+	background: url("arrow_forward.svg");
+}
+
+.project_tecs_container {
+	display: flex;
+	align-content: center;
+	align-items: center;
+	margin-left: 25px;
+	width: 320px;
+}
+
+.tech_card {
+	width: 69px;
+	height: 20px;
+	left: 20px;
+	background: #98DEDE;
+	margin-right: 15px;
+
+}
+
+.tech_text {
+	width: 67px;
+	height: 8px;
+	left: 109px;
+	font-family: Poppins, Arial, Verdana, Tahoma, sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 10.3334px;
+	line-height: 80%;
+	text-align: center;
+	color: #1A2236;
+	padding-bottom: 10px;
 }
