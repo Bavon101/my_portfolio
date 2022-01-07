@@ -259,6 +259,8 @@
   position: relative;
   display: grid;
   top: 650px;
+  align-self: center;
+  margin-left: 15px;
 }
 
 .projects_label {
@@ -270,7 +272,6 @@
   font-size: 50px;
   line-height: 100%;
   color: #1a2236;
-  margin-left: 7px;
 }
 
 .project_card {
