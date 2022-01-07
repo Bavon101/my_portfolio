@@ -299,9 +299,9 @@
   width: 380px;
   height: 186px;
   left: 0;
+  background: url("project_image_1.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  background: url("project_image_1.svg");
   border: 0.333333px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -309,9 +309,9 @@
   width: 380px;
   height: 186px;
   left: 0;
+  background: url("project_image_2.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  background: url("project_image_2.svg");
   border: 0.333333px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -319,9 +319,9 @@
   width: 380px;
   height: 186px;
   left: 0;
+  background: url("project_image_3.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  background: url("project_image_3.svg");
   border: 0.333333px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -329,9 +329,9 @@
   width: 380px;
   height: 186px;
   left: 0;
+  background: url("project_image_4.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  background: url("project_image_4.svg");
   border: 0.333333px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -339,9 +339,9 @@
   width: 380px;
   height: 186px;
   left: 0;
+  background: url("project_image_5.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  background: url("project_image_5.svg");
   border: 0.333333px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -441,12 +441,12 @@
 }
 
 .ul {
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .li {
-	float: left;
-	align-items: center;
+  float: left;
+  align-items: center;
 }
