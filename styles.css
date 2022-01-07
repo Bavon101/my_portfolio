@@ -193,7 +193,10 @@
   background-image: url("ic_download.svg");
 }
 
-.about_card, my_langauges_card,my_frameworks_card, my_skills_card {
+.about_card,
+.my_langauges_card,
+.my_frameworks_card, 
+.my_skills_card {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
