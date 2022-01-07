@@ -126,20 +126,6 @@
   background-color: hsl(0, 0%, 100%);
 }
 
-.resume_button:hover:enabled {
-  border: 1px solid #1a2236;
-  box-sizing: border-box;
-  background-color: hsl(0, 0%, 100%);
-  color: #1a2236;
-}
-
-.resume_button:active:enabled {
-  border: 1px solid #1a2236;
-  box-sizing: border-box;
-  background-color: hsl(0, 0%, 100%);
-  color: #1a2236;
-}
-
 .about_section {
   position: absolute;
   display: flex;
@@ -185,6 +171,20 @@
   font-size: 16px;
 }
 
+.resume_button:hover:enabled {
+  border: 1px solid #1a2236;
+  box-sizing: border-box;
+  background-color: hsl(0, 0%, 100%);
+  color: #1a2236;
+}
+
+.resume_button:active:enabled {
+  border: 1px solid #1a2236;
+  box-sizing: border-box;
+  background-color: hsl(0, 0%, 100%);
+  color: #1a2236;
+}
+
 .download_icon {
   width: 27px;
   height: 24px;
@@ -193,18 +193,13 @@
   background-image: url("ic_download.svg");
 }
 
-.about_card,
-my_langauges_card,
-my_frameworks_card,
-my_skills_card {
+.about_card, my_langauges_card,my_frameworks_card, my_skills_card {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   width: 320px;
   height: 289px;
-  /* left: 16px;
-  right: 16px; */
   margin-top: 25px;
   padding-bottom: 15px;
   align-self: center;
