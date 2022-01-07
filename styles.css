@@ -126,6 +126,20 @@
   background-color: hsl(0, 0%, 100%);
 }
 
+.resume_button:hover:enabled {
+  border: 1px solid #1a2236;
+  box-sizing: border-box;
+  background-color: hsl(0, 0%, 100%);
+  color: #1a2236;
+}
+
+.resume_button:active:enabled {
+  border: 1px solid #1a2236;
+  box-sizing: border-box;
+  background-color: hsl(0, 0%, 100%);
+  color: #1a2236;
+}
+
 .about_section {
   position: absolute;
   display: flex;
@@ -133,7 +147,7 @@
   width: 400px;
   height: 1217px;
   left: 15px;
-  top: 1600px;
+  top: 2300px;
   padding: 5px;
 }
 
@@ -163,37 +177,41 @@
   background: #1a2236;
   align-items: center;
   justify-content: center;
-}
-
-.get_cv_text {
-  width: 86px;
-  height: 24px;
+  border: none;
+  color: hsl(0, 0%, 100%);
   font-family: Poppins, Arial, Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
-  text-align: center;
-  color: hsl(0, 0%, 100%);
 }
 
 .download_icon {
   width: 27px;
   height: 24px;
   left: 201px;
+  margin-left: 10px;
   background-image: url("ic_download.svg");
 }
 
-.my_langauges_card {
+.about_card,
+my_langauges_card,
+my_frameworks_card,
+my_skills_card {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  width: 380px;
+  width: 320px;
   height: 289px;
-  left: 16px;
+  /* left: 16px;
+  right: 16px; */
+  margin-top: 25px;
+  padding-bottom: 15px;
+  align-self: center;
+}
+
+.my_langauges_card {
   background: #1c528a;
-  margin-top: 50px;
   background-image: url("ic_languages_mob-1.svg");
   background-position: bottom;
   background-repeat: no-repeat;
@@ -201,15 +219,7 @@
 }
 
 .my_frameworks_card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 380px;
-  height: 289px;
-  left: 16px;
   background: #e2505c;
-  margin-top: 25px;
   background-image: url("frameworks.svg");
   background-position: bottom;
   background-repeat: no-repeat;
@@ -217,15 +227,7 @@
 }
 
 .my_skills_card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 380px;
-  height: 289px;
-  left: 16px;
   background: #febf52;
-  margin-top: 25px;
   background-image: url("ic_skills.svg");
   background-position: bottom;
   background-repeat: no-repeat;
@@ -242,6 +244,7 @@
   font-size: 20px;
   line-height: 30px;
   color: hsl(0, 0%, 100%);
+  margin-left: 16px;
 }
 
 .my_langaues_text_style {
@@ -301,6 +304,22 @@
   border: 0.333333px solid rgba(255, 255, 255, 0.1);
 }
 
+.project_image_2 {
+  width: 320px;
+  height: 186px;
+  left: 0;
+  background: url("project_image_2.svg");
+  border: 0.333333px solid rgba(255, 255, 255, 0.1);
+}
+
+.project_image_3 {
+  width: 320px;
+  height: 186px;
+  left: 0;
+  background: url("project_image_3.svg");
+  border: 0.333333px solid rgba(255, 255, 255, 0.1);
+}
+
 .project_details_card {
   display: flex;
   flex-direction: column;
@@ -335,12 +354,7 @@
   margin-left: 25px;
   margin-top: 20px;
   border: 1px solid hsl(0, 0%, 100%);
-}
-
-.see_project_text {
-  width: 124px;
-  height: 24px;
-  left: 30px;
+  background-color: #1a2236;
   font-family: Poppins, Arial, Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -350,10 +364,25 @@
   color: hsl(0, 0%, 100%);
 }
 
+.see_project:hover:enabled {
+  border: 1px solid #1a2236;
+  box-sizing: border-box;
+  background-color: hsl(0, 0%, 100%);
+  color: #1a2236;
+}
+
+.see_project:active:enabled {
+  border: 1px solid #1a2236;
+  box-sizing: border-box;
+  background-color: hsl(0, 0%, 100%);
+  color: #1a2236;
+}
+
 .arrow_forward {
   width: 20.57px;
   height: 15.35px;
   left: 166px;
+  margin-left: 10px;
   background: url("arrow_forward.svg");
 }
 
@@ -366,8 +395,8 @@
 }
 
 .tech_card {
-  width: 69px;
-  height: 20px;
+  width: 70px;
+  height: 30px;
   left: 20px;
   background: #98dede;
   margin-right: 15px;
@@ -375,7 +404,7 @@
 
 .tech_text {
   width: 67px;
-  height: 8px;
+  height: 10px;
   left: 109px;
   font-family: Poppins, Arial, Verdana, Tahoma, sans-serif;
   font-style: normal;
