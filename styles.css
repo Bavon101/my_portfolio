@@ -195,7 +195,7 @@
 
 .about_card,
 .my_langauges_card,
-.my_frameworks_card, 
+.my_frameworks_card,
 .my_skills_card {
   display: flex;
   flex-direction: column;
