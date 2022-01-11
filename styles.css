@@ -520,6 +520,10 @@
   padding-top: 2px;
 }
 
+.message_area {
+  height: 5em;
+}
+
 .input_style:focus,
 .message_area:focus {
   outline: none;
@@ -528,10 +532,6 @@
 .message_container {
   width: 360px;
   height: 112px;
-}
-
-.message_area {
-  height: 5em;
 }
 
 .collaboration_form_button {
