@@ -10,8 +10,8 @@ Additional description about the project and its features.
 ![screenshot](./src/img/header_screenshot.png)
 ![screenshot](./src/img/headline_screeshot.png)
 ![screenshot](./src/img/about_sreenshot.png)
-![screenshot](./src/img/latest_project_screenshot.png)
-![screenshot](./src/img/contact_screenshot.png)
+![screenshot](./src/img/latest_project_screenshot.PNG)
+![screenshot](./src/img/contact_screenshot.PNG)
 ## Built With
 
 - HTML
