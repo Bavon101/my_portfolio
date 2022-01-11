@@ -15,13 +15,15 @@
 
 .headline {
   display: flex;
-  position: absolute;
-  width: 100%;
+  position: relative;
+  width: 380px;
   height: 336px;
   left: 16px;
-  top: 104px;
+  top: 10px;
   flex-direction: column;
-  justify-content: space-around;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .ic_image {
@@ -31,12 +33,12 @@
   top: 19px;
   justify-content: flex-end;
   margin-left: auto;
-  background-image: url("ic_menu.svg");
+  background-image: url("src/img/svg/ic_menu.svg");
   border: 0;
 }
 
 .name {
-  width: 220px;
+  width: 360px;
   height: 100px;
   left: 16px;
   top: 104px;
@@ -49,7 +51,7 @@
 }
 
 .intro {
-  width: 288px;
+  width: 360px;
   height: 126px;
   left: 16px;
   top: 224px;
@@ -63,11 +65,13 @@
 }
 
 .colaboration_button {
-  position: absolute;
+  position: relative;
   left: 5%;
   right: 5%;
-  top: 7.94%;
   bottom: 91.04%;
+  align-self: center;
+  align-content: center;
+  width: 360px;
 }
 
 .colaboration_button_rectangle {
@@ -96,18 +100,16 @@
 
 .bottom_geometry {
   position: absolute;
-  width: 375px;
+  width: 380px;
   height: 160px;
   top: 492px;
-  background-image: url("image_geometry_2.svg");
+  background-image: url("src/img/svg/image_geometry_2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-self: center;
 }
 
 .colaboration_button_rectangle:hover:enabled {
-  position: absolute;
-  width: 288px;
-  height: 50px;
-  left: 16px;
-  top: 390px;
   border: 1px solid #1a2236;
   box-sizing: border-box;
   background-color: hsl(0, 0%, 100%);
@@ -115,11 +117,6 @@
 }
 
 .colaboration_button_rectangle:active:enabled {
-  position: absolute;
-  width: 288px;
-  height: 50px;
-  left: 16px;
-  top: 390px;
   border: 2px solid #1a2236;
   box-sizing: border-box;
   color: #1a2236;
@@ -127,22 +124,27 @@
 }
 
 .about_section {
-  position: absolute;
+  position: relative;
   display: flex;
   flex-direction: column;
   height: 1217px;
   left: 15px;
-  top: 2900px;
+  top: 430px;
   padding: 5px;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .about_title {
+  width: 360px;
   font-family: Playfair Display, Arial, Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 50px;
   line-height: 100%;
   color: #1a2236;
+  position: relative;
 }
 
 .about_paragraph {
@@ -152,6 +154,7 @@
   font-size: 14px;
   line-height: 21px;
   color: #1a2236;
+  width: 360px;
 }
 
 .resume_button {
@@ -190,7 +193,7 @@
   height: 24px;
   left: 201px;
   margin-left: 10px;
-  background-image: url("ic_download.svg");
+  background-image: url("src/img/svg/ic_download.svg");
 }
 
 .about_card,
@@ -210,7 +213,7 @@
 
 .my_langauges_card {
   background: #1c528a;
-  background-image: url("ic_languages_mob-1.svg");
+  background-image: url("src/img/svg/ic_languages_mob-1.svg");
   background-position: bottom;
   background-repeat: no-repeat;
   background-position-x: right;
@@ -218,7 +221,7 @@
 
 .my_frameworks_card {
   background: #e2505c;
-  background-image: url("frameworks.svg");
+  background-image: url("src/img/svg/frameworks.svg");
   background-position: bottom;
   background-repeat: no-repeat;
   background-position-x: right;
@@ -226,7 +229,7 @@
 
 .my_skills_card {
   background: #febf52;
-  background-image: url("ic_skills.svg");
+  background-image: url("src/img/svg/ic_skills.svg");
   background-position: bottom;
   background-repeat: no-repeat;
   background-position-x: right;
@@ -258,9 +261,11 @@
 .project_section {
   position: relative;
   display: grid;
-  top: 650px;
+  top: 400px;
   align-self: center;
   margin-left: 15px;
+  justify-self: center;
+  justify-content: center;
 }
 
 .projects_label {
@@ -290,7 +295,7 @@
   width: 380px;
   height: 186px;
   left: 0;
-  background: url("project_image.svg");
+  background: url("src/img/svg/project_image.svg");
   background-repeat: no-repeat;
   background-size: cover;
   border: 0.333333px solid rgba(255, 255, 255, 0.1);
@@ -300,7 +305,7 @@
   width: 380px;
   height: 186px;
   left: 0;
-  background: url("project_image_1.svg");
+  background: url("src/img/svg/project_image_1.svg");
   background-repeat: no-repeat;
   background-size: cover;
   border: 0.333333px solid rgba(255, 255, 255, 0.1);
@@ -310,7 +315,7 @@
   width: 380px;
   height: 186px;
   left: 0;
-  background: url("project_image_2.svg");
+  background: url("src/img/svg/project_image_2.svg");
   background-repeat: no-repeat;
   background-size: cover;
   border: 0.333333px solid rgba(255, 255, 255, 0.1);
@@ -320,7 +325,7 @@
   width: 380px;
   height: 186px;
   left: 0;
-  background: url("project_image_3.svg");
+  background: url("src/img/svg/project_image_3.svg");
   background-repeat: no-repeat;
   background-size: cover;
   border: 0.333333px solid rgba(255, 255, 255, 0.1);
@@ -330,7 +335,7 @@
   width: 380px;
   height: 186px;
   left: 0;
-  background: url("project_image_4.svg");
+  background: url("src/img/svg/project_image_4.svg");
   background-repeat: no-repeat;
   background-size: cover;
   border: 0.333333px solid rgba(255, 255, 255, 0.1);
@@ -340,7 +345,7 @@
   width: 380px;
   height: 186px;
   left: 0;
-  background: url("project_image_5.svg");
+  background: url("src/img/svg/project_image_5.svg");
   background-repeat: no-repeat;
   background-size: cover;
   border: 0.333333px solid rgba(255, 255, 255, 0.1);
@@ -409,7 +414,7 @@
   height: 15.35px;
   left: 166px;
   margin-left: 10px;
-  background: url("arrow_forward.svg");
+  background: url("src/img/svg/arrow_forward.svg");
 }
 
 .project_tecs_container {
