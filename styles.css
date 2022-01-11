@@ -565,8 +565,8 @@
   flex-direction: column;
   width: 100%;
   height: 150px;
-  left: 0px;
-  background: #1A2236;
+  left: 0;
+  background: #1a2236;
 }
 
 .social_resume_text {
@@ -574,12 +574,12 @@
   height: 24px;
   left: 16px;
   top: 4792px;
-  font-family: Poppins;
+  font-family: Poppins, Arial, Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #92DCDC;
+  color: #92dcdc;
 }
 
 .social_resume_button_icon {
@@ -622,28 +622,28 @@
 }
 
 .github {
-   background: url("src/img/svg/ic_github.svg");
-   background-repeat: no-repeat;
+  background: url("src/img/svg/ic_github.svg");
+  background-repeat: no-repeat;
 }
 
 .twitter {
-   background: url("src/img/svg/ic_twitter.svg");
-   background-repeat: no-repeat;
+  background: url("src/img/svg/ic_twitter.svg");
+  background-repeat: no-repeat;
 }
 
 .linkedin {
-   background: url("src/img/svg/ic_linkedin.svg");
-   background-repeat: no-repeat;
+  background: url("src/img/svg/ic_linkedin.svg");
+  background-repeat: no-repeat;
 }
 
 .medium {
-   background: url("src/img/svg/ic_medium.svg");
-   background-repeat: no-repeat;
+  background: url("src/img/svg/ic_medium.svg");
+  background-repeat: no-repeat;
 }
 
 .angelist {
-   background: url("src/img/svg/ic_angellist.svg");
-   background-repeat: no-repeat;
+  background: url("src/img/svg/ic_angellist.svg");
+  background-repeat: no-repeat;
 }
 
 .social_icon_list {
