@@ -7,10 +7,11 @@
 
 Additional description about the project and its features.
 ## Screenshots 📷📲
-![screenshot](./header_screenshot.png)
-![screenshot](./headline_screeshot.png)
-![screenshot](./about_sreenshot.png)
-![screenshot](./projects_screenshot.png)
+![screenshot](./src/img/header_screenshot.png)
+![screenshot](./src/img/headline_screeshot.png)
+![screenshot](./src/img/about_sreenshot.png)
+![screenshot](./src/img/latest_project_screenshot.PNG)
+![screenshot](./src/img/contact_screenshot.PNG)
 ## Built With
 
 - HTML
