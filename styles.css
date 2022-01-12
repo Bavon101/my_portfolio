@@ -2,6 +2,13 @@
   background: #f9f9fa;
 }
 
+@media (min-width: 992px) {
+  .body {
+    margin: auto;
+    max-width: 1440px;
+  }
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -10,6 +17,8 @@
 
 @media (min-width: 992px) {
   .header {
+    /* position: absolute; */
+    position: relative;
     width: 1440px;
     height: 80px;
     left: 0px;
@@ -36,10 +45,16 @@
     align-items: center;
     justify-content: center;
     visibility: visible;
+    width: 1440px;
   }
 }
 
-.menu_link {
+.menu_link,
+.hello,
+.portfolio_option,
+.about_option,
+.contact_option {
+  position: absolute;
   visibility: inherit;
   width: 66px;
   height: 24px;
@@ -53,8 +68,23 @@
   text-align: right;
   color: #1a2236;
   text-decoration: none;
-  margin-left: 10px;
   align-self: center;
+}
+
+.hello {
+  left: 536px;
+}
+
+.portfolio_option {
+  left: 625px;
+}
+
+.about_option {
+  left: 741px;
+}
+
+.contact_option {
+  left: 839px;
 }
 
 .header_image {
@@ -196,7 +226,7 @@
   width: 175px;
   height: 175px;
   left: 563px;
-  top: 702px;
+  top: 782px;
 }
 
 .bottom_geometry {
@@ -218,7 +248,7 @@
     width: 702px;
     height: 877px;
     left: 738px;
-    top: 0;
+    top: 80px;
   }
 }
 
