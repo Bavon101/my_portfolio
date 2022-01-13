@@ -6,7 +6,12 @@
 <!-- ![screenshot](./hello_microverse.png) -->
 
 Additional description about the project and its features.
-## Screenshots 📷📲
+## Screenshots Desktop 📷
+![screenshot](./src/img/desktop_hello.PNG)
+![screenshot](./src/img/desktop_projects.PNG)
+![screenshot](./src/img/desktop_about.PNG)
+![screenshot](./src/img/desktop_getstarted.PNG)
+## Screenshots Mobile 📷📲
 ![screenshot](./src/img/header_screenshot.png)
 ![screenshot](./src/img/headline_screeshot.png)
 ![screenshot](./src/img/about_sreenshot.png)
