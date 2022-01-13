@@ -751,11 +751,7 @@
   height: 218px;
   left: 975px;
   top: 799px;
-  background: linear-gradient(
-    0deg,
-    rgba(26, 34, 54, 0.95),
-    rgba(26, 34, 54, 0.95)
-  );
+  background: linear-gradient(0deg,rgba(26, 34, 54, 0.95),rgba(26, 34, 54, 0.95));
   backdrop-filter: blur(24px);
 }
 
