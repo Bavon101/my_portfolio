@@ -21,10 +21,10 @@
     position: relative;
     width: 1440px;
     height: 80px;
-    left: 0px;
-    top: 0px;
+    left: 0;
+    top: 0;
     background: hsl(0, 0%, 100%);
-    box-shadow: 0px 0.5px 0px #dddfe6;
+    box-shadow: 0 0.5px 0 #dddfe6;
     justify-content: center;
     align-self: center;
     display: flex;
@@ -60,7 +60,7 @@
   height: 24px;
   left: 839px;
   top: 38px;
-  font-family: Poppins;
+  font-family: Poppins, Arial, Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -315,6 +315,7 @@
     top: 300px;
     font-size: 110px;
   }
+
   .contact_title {
     position: absolute;
     width: 548px;
@@ -349,6 +350,7 @@
     left: 834px;
     top: 514px;
   }
+
   .get_started_paragraph {
     position: absolute;
     width: 548px;
@@ -896,7 +898,7 @@
   position: absolute;
   width: 263.06px;
   height: 350.84px;
-  left: 0px;
+  left: 0;
   top: 0;
   background: url("src/img/svg/image_geometry_6.svg");
 }
@@ -1007,7 +1009,7 @@
     position: relative;
     width: 1440px;
     height: 950px;
-    left: 0px;
+    left: 0;
     top: 2100px;
     background: #e5e5e5;
   }
@@ -1063,7 +1065,7 @@
 
   .message_area {
     width: 542px;
-    background: #ffffff;
+    background: hsl(0, 0%, 100%);
     border: 1px solid #252c40;
     box-sizing: border-box;
     border-radius: 4px;
@@ -1135,7 +1137,7 @@
   .input_style {
     width: 253px;
     height: 60px;
-    background: #ffffff;
+    background: hsl(0, 0%, 100%);
     box-sizing: border-box;
     border-radius: 4px;
     outline: none;
@@ -1306,7 +1308,7 @@
     position: absolute;
     width: 1440px;
     height: 123px;
-    left: 0px;
+    left: 0;
     top: 829px;
     flex-direction: row;
   }
