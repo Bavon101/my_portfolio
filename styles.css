@@ -751,8 +751,7 @@
   height: 218px;
   left: 975px;
   top: 799px;
-  background:
-   linear-gradient(
+  background: linear-gradient(
     0deg,
     rgba(26, 34, 54, 0.95),
     rgba(26, 34, 54, 0.95)
@@ -767,8 +766,7 @@
     height: 353px;
     top: 202px;
     display: none;
-    background:
-     linear-gradient(
+    background: linear-gradient(
       0deg,
       rgba(26, 34, 54, 0.95),
       rgba(26, 34, 54, 0.95)
@@ -1141,7 +1139,7 @@
     outline: none;
     padding-top: 9px;
   }
-  
+
   .input_style:focus,
   .message_area:focus {
     outline: invert;
