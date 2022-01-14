@@ -728,7 +728,7 @@
     cursor: pointer;
     height: 270px;
     left: 975px;
-    top: 1015px;
+    top: 900px;
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
 
@@ -754,19 +754,41 @@
   backdrop-filter: blur(1px);
 }
 
-.project_details_card_mini {
+.project_details_card_mini,
+.project_details_card_mini_1,
+.project_details_card_mini_2,
+.project_details_card_mini_4,
+.project_details_card_mini_5 {
   position: absolute;
   width: 465px;
   display: none;
   height: 218px;
-  left: 975px;
-  top: 799px;
+  top: 60px;
+  cursor: pointer;
   background: linear-gradient(
     0deg,
     rgba(26, 34, 54, 0.95),
     rgba(26, 34, 54, 0.95)
   );
   backdrop-filter: blur(24px);
+}
+
+.project_details_card_mini_1 {
+  width: inherit;
+}
+
+.project_details_card_mini_2 {
+  width: inherit;
+  top: 245px;
+}
+
+.project_details_card_mini_4 {
+  width: inherit;
+}
+
+.project_details_card_mini_5 {
+  width: inherit;
+  visibility: visible;
 }
 
 @media (min-width: 992px) {
@@ -790,6 +812,26 @@
 }
 
 .project_image_5:hover .project_details_card_mini {
+  display: inline;
+  animation: fade_in_show 0.5s;
+}
+
+.project_image_1:hover .project_details_card_mini_1 {
+  display: inline;
+  animation: fade_in_show 0.5s;
+}
+
+.project_image_2:hover .project_details_card_mini_2 {
+  display: inline;
+  animation: fade_in_show 0.5s;
+}
+
+.project_image_4:hover .project_details_card_mini_4 {
+  display: inline;
+  animation: fade_in_show 0.5s;
+}
+
+.desktop_image_geometry_4:hover .project_details_card_mini_5 {
   display: inline;
   animation: fade_in_show 0.5s;
 }
@@ -958,8 +1000,7 @@
   height: 40px;
 }
 
-.tech_text,
-.tech_text_mini {
+.tech_text {
   font-family: Poppins, Arial, Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -973,21 +1014,13 @@
 
 @media (min-width: 992px) {
   .tech_text {
-    position: absolute;
-    width: 129px;
     height: 16px;
     font-size: 20px;
     margin: auto;
+    background: #98dede;
+    padding: 10px;
+    margin-right: 15px;
   }
-}
-
-.tech_text_mini {
-  position: absolute;
-  width: 94px;
-  height: 16px;
-  font-size: 20px;
-  margin: auto;
-  align-self: center;
 }
 
 .ul {
