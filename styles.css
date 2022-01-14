@@ -1,5 +1,5 @@
 .body {
-  background: #f9f9fa;
+  background: hsl(0, 0%, 100%);
 }
 
 @media (min-width: 992px) {
@@ -17,7 +17,6 @@
 
 @media (min-width: 992px) {
   .header {
-    /* position: absolute; */
     position: relative;
     width: 1440px;
     height: 80px;
@@ -96,14 +95,15 @@
 .headline {
   display: flex;
   position: relative;
-  width: 380px;
+  width: 360px;
   height: 336px;
-  left: 16px;
+  left: 0;
   top: 10px;
   flex-direction: column;
   justify-self: center;
   justify-content: center;
   align-items: center;
+  align-self: center;
 }
 
 @media (min-width: 992px) {
@@ -177,9 +177,10 @@
 }
 
 .colaboration_button {
-  position: relative;
+  position: absolute;
   left: 5%;
   right: 5%;
+  top: 200px;
   bottom: 91.04%;
   align-self: center;
   align-content: center;
@@ -710,6 +711,16 @@
   border: 0.333333px solid rgba(255, 255, 255, 0.1);
 }
 
+.project_image_5 {
+  width: 380px;
+  height: 186px;
+  left: 0;
+  background: url("src/img/svg/project_image_5.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 0.333333px solid rgba(255, 255, 255, 0.1);
+}
+
 @media (min-width: 992px) {
   .project_image_4 {
     position: absolute;
@@ -720,16 +731,15 @@
     top: 1015px;
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
-}
 
-.project_image_5 {
-  width: 380px;
-  height: 186px;
-  left: 0;
-  background: url("src/img/svg/project_image_5.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  border: 0.333333px solid rgba(255, 255, 255, 0.1);
+  .project_image_5 {
+    position: absolute;
+    width: 465px;
+    height: 270px;
+    left: 975px;
+    top: 655px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
 }
 
 .project_details_card,
@@ -751,12 +761,11 @@
   height: 218px;
   left: 975px;
   top: 799px;
-  background:
-    linear-gradient(
-      0deg,
-      rgba(26, 34, 54, 0.95),
-      rgba(26, 34, 54, 0.95)
-    );
+  background: linear-gradient(
+    0deg,
+    rgba(26, 34, 54, 0.95),
+    rgba(26, 34, 54, 0.95)
+  );
   backdrop-filter: blur(24px);
 }
 
@@ -767,12 +776,11 @@
     height: 353px;
     top: 202px;
     display: none;
-    background:
-      linear-gradient(
-        0deg,
-        rgba(26, 34, 54, 0.95),
-        rgba(26, 34, 54, 0.95)
-      );
+    background: linear-gradient(
+      0deg,
+      rgba(26, 34, 54, 0.95),
+      rgba(26, 34, 54, 0.95)
+    );
   }
 }
 
@@ -781,7 +789,7 @@
   animation: fade_in_show 0.5s;
 }
 
-.project_image_4:hover .project_details_card_mini {
+.project_image_5:hover .project_details_card_mini {
   display: inline;
   animation: fade_in_show 0.5s;
 }
@@ -933,6 +941,7 @@
   background: #98dede;
   margin-right: 15px;
   display: inline-block;
+  text-align: center;
 }
 
 @media (min-width: 992px) {
@@ -940,6 +949,7 @@
     width: 169px;
     height: 40px;
     display: inline-block;
+    text-align: center;
   }
 }
 
@@ -967,7 +977,7 @@
     width: 129px;
     height: 16px;
     font-size: 20px;
-    text-align: center;
+    margin: auto;
   }
 }
 
@@ -1008,7 +1018,7 @@
     height: 950px;
     left: 0;
     top: 2100px;
-    background: #e5e5e5;
+    background: #f9f9fa;
   }
 }
 
@@ -1047,12 +1057,12 @@
   .input_container {
     width: 254px;
     height: 60px;
-    background-color: #e5e5e5;
+    background-color: #f9f9fa;
     border: none;
   }
 
   .message_container {
-    background-color: #e5e5e5;
+    background-color: #f9f9fa;
     border: none;
     position: absolute;
     width: 542px;
@@ -1319,12 +1329,21 @@
     left: 984px;
     top: 40px;
   }
+
+  .social_resume_text {
+    width: 186px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+  }
 }
 
 @media screen and (max-width: 992px) {
   .image_dots,
   .image_dot_1,
   .project_card_macro,
+  .contact_geometry_1,
+  .contact_geometry_2,
   .project_section_images {
     visibility: hidden;
     display: none;
