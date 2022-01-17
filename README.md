@@ -5,6 +5,8 @@
 > My new Portfolio.
 <!-- ![screenshot](./hello_microverse.png) -->
 
+## You can access the live portfolio [here](https://bavon101.github.io/my_portfolio/#About)
+
 Additional description about the project and its features.
 ## Screenshots Desktop 📷
 ![screenshot](./src/img/desktop_hello.PNG)
