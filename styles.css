@@ -258,6 +258,7 @@
   box-sizing: border-box;
   background-color: hsl(0, 0%, 100%);
   color: #1a2236;
+  cursor: pointer;
 }
 
 .colaboration_button_rectangle:active:enabled {
@@ -265,6 +266,7 @@
   box-sizing: border-box;
   color: #1a2236;
   background-color: hsl(0, 0%, 100%);
+  cursor: pointer;
 }
 
 .about_section {
@@ -393,6 +395,7 @@
   box-sizing: border-box;
   background-color: hsl(0, 0%, 100%);
   color: #1a2236;
+  cursor: pointer;
 }
 
 .resume_button:active:enabled {
@@ -400,6 +403,7 @@
   box-sizing: border-box;
   background-color: hsl(0, 0%, 100%);
   color: #1a2236;
+  cursor: pointer;
 }
 
 .download_icon {
@@ -1231,6 +1235,7 @@
   box-sizing: border-box;
   background-color: hsl(0, 0%, 100%);
   color: #1a2236;
+  cursor: pointer;
 }
 
 .collaboration_form_button:active:enabled {
@@ -1238,6 +1243,7 @@
   box-sizing: border-box;
   background-color: hsl(0, 0%, 100%);
   color: #1a2236;
+  cursor: pointer;
 }
 
 .social_card {
