@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# My Portfolio
 
 > My new Portfolio.
 <!-- ![screenshot](./hello_microverse.png) -->

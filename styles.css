@@ -18,7 +18,7 @@
 @media (min-width: 992px) {
   .header {
     position: relative;
-    width: 1440px;
+    width: auto;
     height: 80px;
     left: 0;
     top: 0;
@@ -44,7 +44,7 @@
     align-items: center;
     justify-content: center;
     visibility: visible;
-    width: 1440px;
+    width: auto;
   }
 }
 
@@ -111,6 +111,8 @@
     flex-direction: row;
     top: 0;
     left: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -281,9 +283,9 @@
     position: relative;
     top: 1546px;
     flex-direction: row-reverse;
-    width: 1440px;
+    width: auto;
     height: 586px;
-    left: 160px;
+    padding: 0;
   }
 }
 
@@ -1040,11 +1042,13 @@
 @media (min-width: 992px) {
   .contact_section {
     position: relative;
-    width: 1440px;
+    width: auto;
     height: 950px;
     left: 0;
     top: 2100px;
     background: #f9f9fa;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -1344,7 +1348,6 @@
 
   .social_card {
     position: absolute;
-    width: 1440px;
     height: 123px;
     left: 0;
     top: 829px;
