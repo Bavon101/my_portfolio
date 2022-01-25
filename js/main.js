@@ -98,7 +98,7 @@ const projectImageClass = 'project_image';
 
 function appendProjects() {
   const projectsSection = document.getElementById('mobile_projects');
-  for (let i = 0; i < projects.length; i++) {
+  for (let i = 0; i < projects.length; i+=1) {
     const projectCard = document.createElement('div');
     projectCard.classList.add('project_card');
     const projectDetails = document.createElement('div');
@@ -111,8 +111,7 @@ function appendProjects() {
     projectsTechContainer.classList.add('project_tecs_container');
     const techList = document.createElement('ul');
     techList.classList.add('ul');
-    const technologies = projects[i].technologies;
-    technologies.forEach((t) => {
+    projects[i].technologies.forEach((t) => {
       const listItem = document.createElement('li');
       listItem.classList.add('li');
       const tecCard = document.createElement('div');
@@ -143,7 +142,6 @@ function appendProjects() {
       projectImage.classList.add(projectImageClass);
     } else {
       projectImage.classList.add(`${projectImageClass}_${i}`);
-
     }
     projectCard.appendChild(projectImage);
     projectCard.appendChild(projectDetails);
@@ -152,7 +150,7 @@ function appendProjects() {
 }
 
 appendProjects();
-var projectsButton = document.querySelector('.see_project');
+const projectsButton = document.querySelector('.see_project');
 const detailsCard = document.getElementById('view_project');
 const vanishPoint = document.querySelectorAll('.can_dissapear');
 
@@ -241,7 +239,7 @@ function createProjectDetails(id) {
 function onProjectClick(id) {
   const buttonId = id;
   const projectId = buttonId.replace('project_', '');
-  const index = parseInt(projectId);
+  const index = parseInt(projectId,10);
   if (index !== undefined) {
     createProjectDetails(index);
     detailsCard.style.display = 'block';
@@ -253,7 +251,7 @@ function listenOnBody(event) {
   const id = event.target.id;
   if (id === 'close_project_details') {
     closeDetailsPop();
-  }   else if (id.includes('project_')) {
+  } else if (id.includes('project_')) {
     onProjectClick(id);
   }
 }
