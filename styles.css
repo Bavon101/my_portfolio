@@ -750,12 +750,11 @@
   height: 218px;
   top: 60px;
   cursor: pointer;
-  background:
-    linear-gradient(
-      0deg,
-      rgba(26, 34, 54, 0.95),
-      rgba(26, 34, 54, 0.95)
-    );
+  background: linear-gradient(
+    0deg,
+    rgba(26, 34, 54, 0.95),
+    rgba(26, 34, 54, 0.95)
+  );
   backdrop-filter: blur(24px);
 }
 
@@ -784,12 +783,11 @@
     height: 353px;
     top: 202px;
     display: none;
-    background:
-      linear-gradient(
-        0deg,
-        rgba(26, 34, 54, 0.95),
-        rgba(26, 34, 54, 0.95)
-      );
+    background: linear-gradient(
+      0deg,
+      rgba(26, 34, 54, 0.95),
+      rgba(26, 34, 54, 0.95)
+    );
   }
 }
 
@@ -1489,4 +1487,166 @@
 
 .drawer-menu-items li a:focus {
   text-decoration: underline;
+}
+
+@media (max-width: 992px) {
+}
+
+@media (min-width: 992px) {
+}
+
+.project_details {
+  /* display: none; */
+  width: 100%;
+  border: none;
+  position: relative;
+  background: hsl(0, 0%, 100%);
+  top: 500px;
+}
+
+.project_detials_close {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 20px;
+  background: url(./src/img/svg/drawer_close.svg);
+  background-repeat: no-repeat;
+  border: none;
+}
+
+.projects_main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 57px 11px 20px 11px;
+}
+
+article h2 {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 80%;
+  color: #1a2236;
+}
+
+.project_tech_container_popup {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.project_tech_item {
+  border: 0.516669px solid #1a2236;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10.3334px;
+  line-height: 80%;
+  color: #1a2236;
+  margin-right: 10px;
+  padding: 6px;
+}
+
+.project_images_container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 90vw;
+  align-self: center;
+}
+
+.project_navigation_button_left {
+  position: absolute;
+  left: 6px;
+  top: 25vw;
+  background: url(./src/img/svg/Vector\ 4.svg);
+  width: 15px;
+  height: 15px;
+  border: 0;
+  transform: rotate(-360deg);
+  background-repeat: no-repeat;
+}
+
+.project_navigation_button_right {
+  position: absolute;
+  right: 6px;
+  top: 25vw;
+  background: url(./src/img/svg/Vector\ 5.svg);
+  width: 9px;
+  height: 15px;
+  border: 0;
+  transform: rotate(-360deg);
+  background-repeat: no-repeat;
+}
+
+.main_project_image {
+  background: url(./src/img/svg/project_image.svg);
+  background-repeat: no-repeat;
+  height: 54.5vw;
+  width: 100%;
+  background-size: cover;
+}
+
+.project_image_collection {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.project_small_image {
+  background: url(./src/img/svg/project_image.svg);
+  background-size: contain;
+  height: 60px;
+  width: 25%;
+  background-repeat: no-repeat;
+}
+
+.projects_popup_text {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: #1a2236;
+}
+
+.reversed_button {
+  border: 1px solid #1A2236;
+  margin-top: 29px;
+  width: 75%;
+  align-self: center;
+  background: white;
+  padding: 10px 0;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 27px;
+text-align: center;
+position: relative;
+}
+
+.reversed_button:focus, .reversed_button:hover {
+  color: #fff;
+  background: #1A2236;
+}
+
+.project_live_btn {
+  position: absolute;
+  background: url(./src/img/svg/ic_link.svg);
+  background-repeat: no-repeat;
+  right: 12px;
+  width: 22px;
+  height: 22px;
+  color: #fff;
+}
+
+.project_github_btn {
+  position: absolute;
+  background: url(./src/img/svg/ic_github_white.svg);
+  background-repeat: no-repeat;
+  right: 12px;
+  width: 24px;
+  height: 24px;
+  color: #fff;
 }
