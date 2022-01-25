@@ -37,9 +37,10 @@
 
   <body class="body">
     <header class="header">
-      <div class="geometry_image"></div>
-      <nav>
-        <button class="ic_image"></button>
+      
+      <nav class="navbar">
+        <div class="geometry_image"></div>  
+        <button class="nav-btn"></button>
         <ul class="nav_menus">
           <li><a href="#Hello" class="hello">Hello</a></li>
           <li><a href="#Portfolio" class="portfolio_option">Portfolio</a></li>
@@ -47,7 +48,35 @@
           <li><a href="#Contact" class="contact_option">Contact</a></li>
         </ul>
       </nav>
+       <nav class="open-nav disappear">
+         <div class="drawer-image"></div>
+         <div class="drawer-image-1"></div>
+         <div class="drawer-image-2"></div>
+         <div class="drawer-image-3"></div>
+         <button class="close-drawer-btn"> </button>
+         <ul class="drawer-menu-items">
+           <li><a href="#Hello"> Hello</a></li>
+           <li><a href="#Portfolio"> Portfolio</a></li>
+           <li><a href="#About"> About</a></li>
+           <li><a href="#Contact">Contact</a></li>
+         </ul>
+       </nav>
     </header>
+    <!-- <div class="menu_drawer">
+      <div class="drawer_image"></div>
+      <div class="drawer_image_1"></div>
+      <button class="close_drawer_button" id="drawer_button_close"></button>
+      <div class="drawer_image_2"></div>
+      <div class="drawer_image_3"></div>
+      <div class="drawer_options">
+        <ul class="drawer_menus">
+          <li><a href="#Hello" class="drawer_options_text">Hello</a></li>
+          <li><a href="#Portfolio" class="drawer_options_text">Portfolio</a></li>
+          <li><a href="#About" class="drawer_options_text">About</a></li>
+          <li><a href="#Contact" class="drawer_options_text">Contact</a></li>
+        </ul>
+      </div>
+    </div> -->
     <section class="headline" id="Hello">
       <h1 class="name">Akumu Bavon</h1>
       <p class="intro">
@@ -506,5 +535,6 @@
         </div>
       </div>
     </section>
+    <script src="js/main.js"></script>
   </body>
 </html>
