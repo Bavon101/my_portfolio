@@ -16,7 +16,6 @@
 @media (min-width: 992px) {
   .header {
     display: flex;
-    justify-content: space-between;
     position: relative;
     width: auto;
     height: 80px;
@@ -26,7 +25,6 @@
     box-shadow: 0 0.5px 0 #dddfe6;
     justify-content: center;
     align-self: center;
-    display: flex;
   }
 }
 
@@ -752,11 +750,12 @@
   height: 218px;
   top: 60px;
   cursor: pointer;
-  background: linear-gradient(
-    0deg,
-    rgba(26, 34, 54, 0.95),
-    rgba(26, 34, 54, 0.95)
-  );
+  background:
+    linear-gradient(
+      0deg,
+      rgba(26, 34, 54, 0.95),
+      rgba(26, 34, 54, 0.95)
+    );
   backdrop-filter: blur(24px);
 }
 
@@ -785,11 +784,12 @@
     height: 353px;
     top: 202px;
     display: none;
-    background: linear-gradient(
-      0deg,
-      rgba(26, 34, 54, 0.95),
-      rgba(26, 34, 54, 0.95)
-    );
+    background:
+      linear-gradient(
+        0deg,
+        rgba(26, 34, 54, 0.95),
+        rgba(26, 34, 54, 0.95)
+      );
   }
 }
 
