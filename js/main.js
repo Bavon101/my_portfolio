@@ -98,7 +98,7 @@ const projectImageClass = 'project_image';
 
 function appendProjects() {
   const projectsSection = document.getElementById('mobile_projects');
-  for (let i = 0; i < projects.length; i+=1) {
+  for (let i = 0; i < projects.length; i += 1) {
     const projectCard = document.createElement('div');
     projectCard.classList.add('project_card');
     const projectDetails = document.createElement('div');
@@ -239,7 +239,7 @@ function createProjectDetails(id) {
 function onProjectClick(id) {
   const buttonId = id;
   const projectId = buttonId.replace('project_', '');
-  const index = parseInt(projectId,10);
+  const index = parseInt(projectId, 10);
   if (index !== undefined) {
     createProjectDetails(index);
     detailsCard.style.display = 'block';
@@ -248,11 +248,10 @@ function onProjectClick(id) {
 projectsButton.addEventListener('click', onProjectClick, false);
 
 function listenOnBody(event) {
-  const id = event.target.id;
-  if (id === 'close_project_details') {
+  if (event.target.id === 'close_project_details') {
     closeDetailsPop();
-  } else if (id.includes('project_')) {
-    onProjectClick(id);
+  } else if (event.target.id.includes('project_')) {
+    onProjectClick(event.target.id);
   }
 }
 document.body.addEventListener('click', listenOnBody);
