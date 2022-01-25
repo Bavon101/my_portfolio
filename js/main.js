@@ -13,7 +13,7 @@ function disappear() {
 function closeOnAtag(e) {
   const anchor = e.target.closest('a');
   if (anchor !== null) {
-	disappear();
+    disappear();
   }
 }
 menu1.addEventListener('click', disappear);
