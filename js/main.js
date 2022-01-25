@@ -31,8 +31,8 @@ const projects = [{
   technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
   live_link: '#',
   source_link: '#',
-  },
-  {
+},
+{
   name: 'Bavon Portfolio ',
   description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
           beatae ullam dolore hic repellendus ratione dolorum optio sit iure,
@@ -43,8 +43,8 @@ const projects = [{
   technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
   live_link: '#',
   source_link: '#'
-  },
-  {
+},
+{
   name: 'Bavon Portfolio ',
   description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
           beatae ullam dolore hic repellendus ratione dolorum optio sit iure,
@@ -55,8 +55,8 @@ const projects = [{
   technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
   live_link: '#',
   source_link: '#'
-  },
-  {
+},
+{
   name: 'Bavon Portfolio ',
   description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
           beatae ullam dolore hic repellendus ratione dolorum optio sit iure,
@@ -67,8 +67,8 @@ const projects = [{
   technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
   live_link: '#',
   source_link: '#'
-  },
-  {
+},
+{
   name: 'Bavon Portfolio ',
   description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
           beatae ullam dolore hic repellendus ratione dolorum optio sit iure,
@@ -79,8 +79,8 @@ const projects = [{
   technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
   live_link: '#',
   source_link: '#'
-  },
-  {
+},
+{
   name: 'Bavon Portfolio ',
   description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
           beatae ullam dolore hic repellendus ratione dolorum optio sit iure,
@@ -91,7 +91,7 @@ const projects = [{
   technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
   live_link: '#',
   source_link: '#'
-  }
+}
 ];
 
 const projectImageClass = 'project_image';
@@ -124,7 +124,7 @@ function appendProjects() {
       tecCard.appendChild(techValue);
       listItem.appendChild(tecCard);
       techList.appendChild(listItem);
-    })
+    });
     projectsTechContainer.appendChild(techList);
     const projectId = `project_${i}`;
     const projectButton = document.createElement('button');
@@ -156,18 +156,18 @@ function appendProjects() {
 appendProjects();
 var projectsButton = document.querySelector('.see_project');
 const detailsCard = document.getElementById('view_project');
-const closeDetailsPopUpBtn = document.getElementsByClassName("project_detials_close")[0];
 const vanishPoint = document.querySelectorAll('.can_dissapear');
-function closeDetailsPop() {
-  detailsCard.style.display = "none";
-  togleVanishPoint();
-  detailsCard.replaceChildren();
-}
 
 function togleVanishPoint() {
-   vanishPoint.forEach((e) => {
-     e.classList.toggle('has_dissapeared');
-   })
+  vanishPoint.forEach((e) => {
+    e.classList.toggle('has_dissapeared');
+  })
+}
+
+function closeDetailsPop() {
+  detailsCard.style.display = 'none';
+  togleVanishPoint();
+  detailsCard.replaceChildren();
 }
 
 function createProjectDetails(id) {
@@ -210,9 +210,9 @@ function createProjectDetails(id) {
   imagesCollection.classList.add('project_image_collection');
   project.images.forEach((i) => {
     const smallImage = document.createElement('div');
-    smallImage.classList.add('project_small_image');
+    smallImage.classList.add(`project_small_image${i}`);
     imagesCollection.appendChild(smallImage);
-  })
+  });
   imagesContainer.appendChild(imagesCollection);
   projectDataCard.appendChild(imagesContainer);
   const projectDescription = document.createElement('p');
@@ -241,7 +241,6 @@ function createProjectDetails(id) {
 }
 
 function onProjectClick(id) {
-  console.log('You clicked me');
   const buttonId = id;
   const projectId = buttonId.replace('project_', '');
   const index = parseInt(projectId);
@@ -256,8 +255,7 @@ document.body.addEventListener('click', function (event) {
   const id = event.target.id;
   if (id === 'close_project_details') {
     closeDetailsPop();
-  }
-  else if (id.includes('project_')) {
+  }else if (id.includes('project_')) {
     onProjectClick(id);
   }
 });
