@@ -1495,13 +1495,31 @@
 @media (min-width: 992px) {
 }
 
+.can_dissapear {
+  visibility: visible;
+  transition: 0.5s;
+}
+
+.has_dissapeared {
+  visibility: hidden;
+  display: none;
+  display: none;
+  transition: 0.5s;
+}
+
+
+
 .project_details {
-  /* display: none; */
+  display: none;
+  z-index: 1;
   width: 100%;
+  height: 100%;
   border: none;
   position: relative;
   background: hsl(0, 0%, 100%);
-  top: 500px;
+  left: 0;
+  top: 20px;
+  overflow-x: hidden;
 }
 
 .project_detials_close {
