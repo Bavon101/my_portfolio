@@ -1489,12 +1489,6 @@
   text-decoration: underline;
 }
 
-@media (max-width: 992px) {
-}
-
-@media (min-width: 992px) {
-}
-
 .can_dissapear {
   visibility: visible;
   transition: 0.5s;
@@ -1503,11 +1497,8 @@
 .has_dissapeared {
   visibility: hidden;
   display: none;
-  display: none;
   transition: 0.5s;
 }
-
-
 
 .project_details {
   display: none;
@@ -1629,24 +1620,25 @@ article h2 {
 }
 
 .reversed_button {
-  border: 1px solid #1A2236;
+  border: 1px solid #1a2236;
   margin-top: 29px;
   width: 75%;
   align-self: center;
   background: white;
   padding: 10px 0;
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 27px;
-text-align: center;
-position: relative;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  position: relative;
 }
 
-.reversed_button:focus, .reversed_button:hover {
+.reversed_button:focus,
+.reversed_button:hover {
   color: #fff;
-  background: #1A2236;
+  background: #1a2236;
 }
 
 .project_live_btn {
