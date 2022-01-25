@@ -118,9 +118,10 @@ function appendProjects() {
     //! add list to card
     projectsTechContainer.appendChild(techList);
     //! add project button
-
+    const project_id = `project_${i}`;
     const projectButton = document.createElement('button');
     projectButton.classList.add('see_project');
+    projectButton.setAttribute('id', project_id);
     const buttonText = document.createTextNode('See this project');
     projectButton.appendChild(buttonText);
     const buttonIcon = document.createElement('i');
