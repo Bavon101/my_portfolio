@@ -42,7 +42,7 @@ const projects = [{
   images: ['', '', '', ''],
   technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
   live_link: '#',
-  source_link: '#'
+  source_link: '#',
 },
 {
   name: 'Bavon Portfolio ',
@@ -54,7 +54,7 @@ const projects = [{
   images: ['', '', '', ''],
   technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
   live_link: '#',
-  source_link: '#'
+  source_link: '#',
 },
 {
   name: 'Bavon Portfolio ',
@@ -66,7 +66,7 @@ const projects = [{
   images: ['', '', '', ''],
   technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
   live_link: '#',
-  source_link: '#'
+  source_link: '#',
 },
 {
   name: 'Bavon Portfolio ',
@@ -78,7 +78,7 @@ const projects = [{
   images: ['', '', '', ''],
   technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
   live_link: '#',
-  source_link: '#'
+  source_link: '#',
 },
 {
   name: 'Bavon Portfolio ',
@@ -90,8 +90,8 @@ const projects = [{
   images: ['', '', '', ''],
   technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
   live_link: '#',
-  source_link: '#'
-}
+  source_link: '#',
+},
 ];
 
 const projectImageClass = 'project_image';
@@ -138,8 +138,6 @@ function appendProjects() {
     projectDetails.appendChild(projectName);
     projectDetails.appendChild(projectsTechContainer);
     projectDetails.appendChild(projectButton);
-
-
     const projectImage = document.createElement('div');
     if (i === 0) {
       projectImage.classList.add(projectImageClass);
@@ -161,7 +159,7 @@ const vanishPoint = document.querySelectorAll('.can_dissapear');
 function togleVanishPoint() {
   vanishPoint.forEach((e) => {
     e.classList.toggle('has_dissapeared');
-  })
+  });
 }
 
 function closeDetailsPop() {
@@ -193,7 +191,7 @@ function createProjectDetails(id) {
     const tech = document.createTextNode(t);
     listItem.appendChild(tech);
     techList.appendChild(listItem);
-  })
+  });
   projectDataCard.appendChild(techList);
   const imagesContainer = document.createElement('div');
   imagesContainer.classList.add('project_images_container');
@@ -251,11 +249,12 @@ function onProjectClick(id) {
 }
 projectsButton.addEventListener('click', onProjectClick, false);
 
-document.body.addEventListener('click', function (event) {
+function listenOnBody(event) {
   const id = event.target.id;
   if (id === 'close_project_details') {
     closeDetailsPop();
-  }else if (id.includes('project_')) {
+  }   else if (id.includes('project_')) {
     onProjectClick(id);
   }
-});
+}
+document.body.addEventListener('click', listenOnBody);
