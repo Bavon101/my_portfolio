@@ -22,48 +22,72 @@ navBars.addEventListener('click', closeOnAtag, false);
 
 const projects = [{
     name: 'Bavon Portfolio ',
-    description: 'My Portfolio',
-    images: [],
+    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+          beatae ullam dolore hic repellendus ratione dolorum optio sit iure,
+          velit consequatur, inventore deserunt, ad fugiat! Ab qui vitae
+          laudantium velit tenetur tempore temporibus ex in dolorem nulla! Enim,
+          adipisci in!`,
+    images: ['','','',''],
     technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
     live_link: "#",
     source_link: "#",
   },
   {
     name: 'Bavon Portfolio ',
-    description: 'My Portfolio',
-    images: [],
+    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+          beatae ullam dolore hic repellendus ratione dolorum optio sit iure,
+          velit consequatur, inventore deserunt, ad fugiat! Ab qui vitae
+          laudantium velit tenetur tempore temporibus ex in dolorem nulla! Enim,
+          adipisci in!`,
+    images: ['', '', '', ''],
     technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
     live_link: "#",
     source_link: "#"
   },
   {
     name: 'Bavon Portfolio ',
-    description: 'My Portfolio',
-    images: [],
+    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+          beatae ullam dolore hic repellendus ratione dolorum optio sit iure,
+          velit consequatur, inventore deserunt, ad fugiat! Ab qui vitae
+          laudantium velit tenetur tempore temporibus ex in dolorem nulla! Enim,
+          adipisci in!`,
+    images: ['', '', '', ''],
     technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
     live_link: "#",
     source_link: "#"
   },
   {
     name: 'Bavon Portfolio ',
-    description: 'My Portfolio',
-    images: [],
+    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+          beatae ullam dolore hic repellendus ratione dolorum optio sit iure,
+          velit consequatur, inventore deserunt, ad fugiat! Ab qui vitae
+          laudantium velit tenetur tempore temporibus ex in dolorem nulla! Enim,
+          adipisci in!`,
+    images: ['', '', '', ''],
     technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
     live_link: "#",
     source_link: "#"
   },
   {
     name: 'Bavon Portfolio ',
-    description: 'My Portfolio',
-    images: [],
+    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+          beatae ullam dolore hic repellendus ratione dolorum optio sit iure,
+          velit consequatur, inventore deserunt, ad fugiat! Ab qui vitae
+          laudantium velit tenetur tempore temporibus ex in dolorem nulla! Enim,
+          adipisci in!`,
+    images: ['', '', '', ''],
     technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
     live_link: "#",
     source_link: "#"
   },
   {
     name: 'Bavon Portfolio ',
-    description: 'My Portfolio',
-    images: [],
+    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+          beatae ullam dolore hic repellendus ratione dolorum optio sit iure,
+          velit consequatur, inventore deserunt, ad fugiat! Ab qui vitae
+          laudantium velit tenetur tempore temporibus ex in dolorem nulla! Enim,
+          adipisci in!`,
+    images: ['', '', '', ''],
     technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
     live_link: "#",
     source_link: "#"
@@ -148,4 +172,130 @@ function appendProjects() {
 }
 
 appendProjects();
+var projectsButton = document.querySelector('.see_project');
+const detailsCard = document.getElementById('view_project');
+const closeDetailsPopUpBtn = document.getElementsByClassName("project_detials_close")[0];
+const vanishPoint = document.querySelectorAll('.can_dissapear');
+function closeDetailsPop() {
+  detailsCard.style.display = "none";
+  togleVanishPoint();
+  detailsCard.replaceChildren();
+}
 
+function togleVanishPoint() {
+   vanishPoint.forEach((e) => {
+     e.classList.toggle('has_dissapeared');
+   })
+}
+
+function createProjectDetails(id) {
+  const project = projects[id];
+  if (project === null || project === undefined) {
+    return;
+  }
+  //!create card elements
+  //? button
+  const closeButton = document.createElement('button');
+  closeButton.classList.add('project_detials_close');
+  closeButton.setAttribute('id', 'close_project_details');
+  detailsCard.appendChild(closeButton);
+  //? project details
+  const projectDataCard = document.createElement('article');
+  projectDataCard.classList.add('projects_main');
+  //?name
+  const projectName = document.createElement('h2');
+  // projectName.classList.add(projectName);
+  //?nameText
+  const projectNameText = document.createTextNode(project.name);
+  projectName.appendChild(projectNameText);
+  projectDataCard.appendChild(projectName);
+  //?tech list
+  const techList = document.createElement('ul');
+  techList.classList.add('project_tech_container_popup');
+  //?add tech items
+  project.technologies.forEach((t) => {
+    const listItem = document.createElement('li');
+    listItem.classList.add('project_tech_item');
+    const tech = document.createTextNode(t);
+    listItem.appendChild(tech);
+    techList.appendChild(listItem);
+  })
+  projectDataCard.appendChild(techList);
+  //?Project images
+  const imagesContainer = document.createElement('div');
+  imagesContainer.classList.add('project_images_container');
+  //?main image
+  const mainProjectImage = document.createElement('div');
+  mainProjectImage.classList.add('main_project_image');
+  const backIcon = document.createElement('button');
+  backIcon.classList.add('project_navigation_button_left');
+  mainProjectImage.appendChild(backIcon);
+  const forwardIcon = document.createElement('button');
+  forwardIcon.classList.add('project_navigation_button_right');
+  mainProjectImage.appendChild(forwardIcon);
+  imagesContainer.appendChild(mainProjectImage);
+  //Images collection
+  const imagesCollection = document.createElement('div');
+  imagesCollection.classList.add('project_image_collection');
+  //?add collection
+  project.images.forEach((i) => {
+    const smallImage = document.createElement('div');
+    smallImage.classList.add('project_small_image');
+    imagesCollection.appendChild(smallImage);
+  })
+  imagesContainer.appendChild(imagesCollection);
+  projectDataCard.appendChild(imagesContainer);
+  //?project description
+  const projectDescription = document.createElement('p');
+  projectDescription.classList.add('projects_popup_text');
+  const descriptionText = document.createTextNode(project.description);
+  projectDescription.appendChild(descriptionText);
+  projectDataCard.appendChild(projectDescription);
+  //! actions buttons
+  //?view live
+  const viewLiveButton = document.createElement('button');
+  viewLiveButton.classList.add('reversed_button');
+  const viewBtnText = document.createTextNode('See live');
+  viewLiveButton.appendChild(viewBtnText);
+  const viewBtnIcon = document.createElement('i');
+  viewBtnIcon.classList.add('project_live_btn');
+  viewLiveButton.appendChild(viewBtnIcon);
+  projectDataCard.appendChild(viewLiveButton);
+  //?view source
+  const viewSourceBtn = document.createElement('button');
+  viewSourceBtn.classList.add('reversed_button');
+  const viewSourceTxt = document.createTextNode('See source');
+  viewSourceBtn.appendChild(viewSourceTxt);
+  const viewSourceIcon = document.createElement('i');
+  viewSourceIcon.classList.add('project_github_btn');
+  viewSourceBtn.appendChild(viewSourceIcon);
+  projectDataCard.appendChild(viewSourceBtn);
+  //?finish
+  detailsCard.appendChild(projectDataCard);
+  togleVanishPoint();
+
+
+
+}
+
+function onProjectClick(id) {
+  console.log('You clicked me');
+  const buttonId = id;
+  const projectId = buttonId.replace('project_', '');
+  const index = parseInt(projectId);
+  if (index != undefined) {
+    createProjectDetails(index);
+    detailsCard.style.display = "block";
+  }
+}
+projectsButton.addEventListener('click', onProjectClick, false);
+
+document.body.addEventListener('click', function (event) {
+  const id = event.target.id;
+  if (id === 'close_project_details') {
+    closeDetailsPop();
+  }
+  else if (id.includes('project_')) {
+    onProjectClick(id);
+  }
+});
