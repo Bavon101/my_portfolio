@@ -366,25 +366,48 @@ function listenOnBody(event) {
   }
 }
 document.body.addEventListener('click', listenOnBody);
-
-
-// lowercase validation
-
-let formBtn = document.querySelector('.collaboration_form_button');
-let email = document.getElementById('email').value;
-
-function lowercase(e) {
+let email = document.getElementById('email');
+const form = document.getElementById('contact_form');
+const errorContainer = document.getElementById('error_msg');
+function isLowercase(e) {
   if (e.toLowerCase() === e) {
     return true;
-  } else return false;
+  } else {
+    return false
+  };
 }
-
-function error () {
-console.log(email);
-
-  if (lowercase(email)) {
-console.log('I am lower case');
-  } else console.log ('I am not lowercase');
+function alertValidation() {
+  const validity = email.validity;
+  if (validity.valueMissing) {
+    errorContainer.textContent = 'Please provide an email address';
+  } else if (validity.typeMismatch) {
+    errorContainer.textContent = 'Please provide a valid address';
+  } else if (!isLowercase(email.value)) {
+    errorContainer.textContent = 'Your email address should be in lowercase';
+  }
+  errorContainer.style.padding = '4px 0';
 }
-
-formBtn.addEventListener('click', error)
+function hideValidation() {
+  errorContainer.style.padding = '0';
+  errorContainer.textContent = '';
+}
+function validateEmail(e) {
+  const emailValue = email.value;
+  if (!isLowercase(emailValue)) {
+    alertValidation();
+    e.preventDefault();
+  } else {
+    hideValidation();
+  }
+}
+function validateSubmission(e) {
+  const emailValue = email.value;
+  if (!isLowercase(emailValue)) {
+    alertValidation();
+    e.preventDefault();
+  } else {
+    hideValidation();
+  }
+}
+email.addEventListener('input', validateEmail);
+form.addEventListener('submit', validateSubmission);
