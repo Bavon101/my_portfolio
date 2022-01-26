@@ -184,8 +184,11 @@
         </div>
         <div class="email_container input_container">
           <label for="email" class="input_label"> Your email</label>
+          <span class="error_msg"  id="error_msg">Please use lower case letters only!</span>
           <input type="email" class="input_style" required id="email" />
+          
         </div>
+        
         <div class="input_container message_container">
           <label for="msg" class="input_label">Message</label>
           <textarea
@@ -197,7 +200,7 @@
             placeholder="Enter your message here..."
           ></textarea>
         </div>
-        <button class="collaboration_form_button">Start collaboration</button>
+        <button type="button" id="form_btn" class="collaboration_form_button">Start collaboration</button>
       </form>
       <div class="social_card">
         <div class="social_button_container">
