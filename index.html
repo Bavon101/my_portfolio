@@ -171,7 +171,7 @@
       </p>
       <div class="contact_geometry_1"></div>
       <div class="contact_geometry_2"></div>
-      <form action="https://formspree.io/f/meqnejkd" method="POST">
+      <form action="https://formspree.io/f/meqnejkd" method="POST" id="contact_form">
         <div class="name_container input_container">
           <label for="name" class="input_label"> Your name</label>
           <input
@@ -184,8 +184,10 @@
         </div>
         <div class="email_container input_container">
           <label for="email" class="input_label"> Your email</label>
+         
           <input type="email" class="input_style" required id="email" />
         </div>
+        
         <div class="input_container message_container">
           <label for="msg" class="input_label">Message</label>
           <textarea
@@ -196,8 +198,11 @@
             maxlength="500"
             placeholder="Enter your message here..."
           ></textarea>
+          <span class="error_msg" id="error_msg"></span>
         </div>
-        <button class="collaboration_form_button">Start collaboration</button>
+        
+        <button id="form_btn" class="collaboration_form_button">Start collaboration</button>
+         
       </form>
       <div class="social_card">
         <div class="social_button_container">
