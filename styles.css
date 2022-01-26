@@ -293,7 +293,7 @@
 }
 
 .contact_title {
-  width: 360px;
+  width: auto;
 }
 
 @media (min-width: 992px) {
