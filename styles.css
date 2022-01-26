@@ -308,7 +308,6 @@
 
   .contact_title {
     position: absolute;
-    width: 548px;
     height: 110px;
     left: 446px;
     top: 10px;
@@ -1764,4 +1763,14 @@ article h2 {
   margin-right: 4.7%;
   margin-top: 5%;
   gap: 25%;
+}
+
+.error_msg {
+  background:#e4a7ac;
+  color: #1a2236;
+  width: inherit;
+  border-radius: inherit;
+  text-align: center;
+  font-size: 12px;
+  padding: 4px 0;
 }
