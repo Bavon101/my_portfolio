@@ -1369,6 +1369,7 @@
   .project_card_macro,
   .contact_geometry_1,
   .contact_geometry_2,
+  .project_view_controll_container,
   .project_section_images {
     visibility: hidden;
     display: none;
@@ -1539,12 +1540,16 @@ article h2 {
   font-size: 20px;
   line-height: 80%;
   color: #1a2236;
+  margin-left: 2.4%;
+  margin-right: 4.7%;
 }
 
 .project_tech_container_popup {
   display: flex;
   list-style: none;
   padding-left: 0;
+  margin-left: 2.4%;
+  margin-right: 4.7%;
 }
 
 .project_tech_item {
@@ -1606,8 +1611,8 @@ article h2 {
 
 .project_small_image {
   background: url(./src/img/svg/project_image.svg);
-  background-size: contain;
-  height: 60px;
+  background-size: cover;
+  height: 100px;
   width: 25%;
   background-repeat: no-repeat;
 }
@@ -1643,6 +1648,14 @@ article h2 {
   background: #1a2236;
 }
 
+.pop_up_btn_container {
+  display: flex;
+  flex-direction: column;
+  width: 90.6%;
+  align-items: center;
+  justify-content: center;
+}
+
 .project_live_btn {
   position: absolute;
   background: url(./src/img/svg/ic_link.svg);
@@ -1661,4 +1674,93 @@ article h2 {
   width: 24px;
   height: 24px;
   color: #fff;
+}
+
+@media (min-width: 992px) {
+  .project_small_image {
+    height: 172px;
+    background-size: cover;
+    width: 25%;
+  }
+
+  .main_project_image {
+    height: 40vh;
+    width: 100%;
+  }
+
+  .project_images_container {
+    width: 90.6%;
+  }
+
+  .projects_popup_text {
+    align-self: center;
+    margin-left: 4.7%;
+    margin-right: 4.7%;
+    width: 53.8%;
+    margin-top: 5%;
+  }
+
+  article h2 {
+    margin-left: 4.7%;
+    margin-right: 4.7%;
+  }
+
+  .project_tech_container_popup {
+    margin-left: 4.7%;
+    margin-right: 4.7%;
+  }
+  .pop_up_btn_container {
+    flex-direction: row;
+    margin-left: 4.7%;
+    margin-right: 4.7%;
+  }
+
+  .reversed_button {
+    width: 18.9%;
+    margin-right: 30px;
+    align-self: center;
+  }
+}
+
+.project_contols_btn {
+  border: none;
+  background: none;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.back_icon {
+  background: url('src/img/svg/ic_arrow_left.svg');
+  width: 20.57px;
+  height: 20.35px;
+  margin-right: 10px;
+}
+
+.forward_icon {
+  background: url('src/img/svg/ic_arrow_left.svg');
+  width: 20.57px;
+  height: 20.35px;
+  margin-left: 10px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.icon_btn {
+  display: flex;
+  gap: 5px;
+  width: 250px;
+}
+
+.project_view_controll_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90.6%;
+  bottom: 5%;
+  margin-left: 4.7%;
+  margin-right: 4.7%;
+  margin-top: 5%;
+  gap: 25%;
 }
