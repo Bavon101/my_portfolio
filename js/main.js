@@ -366,3 +366,25 @@ function listenOnBody(event) {
   }
 }
 document.body.addEventListener('click', listenOnBody);
+
+
+// lowercase validation
+
+let formBtn = document.querySelector('.collaboration_form_button');
+let email = document.getElementById('email').value;
+
+function lowercase(e) {
+  if (e.toLowerCase() === e) {
+    return true;
+  } else return false;
+}
+
+function error () {
+console.log(email);
+
+  if (lowercase(email)) {
+console.log('I am lower case');
+  } else console.log ('I am not lowercase');
+}
+
+formBtn.addEventListener('click', error)
