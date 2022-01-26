@@ -366,21 +366,19 @@ function listenOnBody(event) {
   }
 }
 document.body.addEventListener('click', listenOnBody);
-let email = document.getElementById('email');
+const email = document.getElementById('email');
 const form = document.getElementById('contact_form');
 const errorContainer = document.getElementById('error_msg');
 function isLowercase(e) {
   if (e.toLowerCase() === e) {
     return true;
-  } else {
-    return false
-  };
+  }
+  return false;
 }
 function alertValidation() {
-  const validity = email.validity;
-  if (validity.valueMissing) {
+  if (email.validity.valueMissing) {
     errorContainer.textContent = 'Please provide an email address';
-  } else if (validity.typeMismatch) {
+  } else if (email.validity.typeMismatch) {
     errorContainer.textContent = 'Please provide a valid address';
   } else if (!isLowercase(email.value)) {
     errorContainer.textContent = 'Your email address should be in lowercase';
