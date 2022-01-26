@@ -182,7 +182,7 @@ function appendProjects() {
 function appendDesktopProjects() {
   const projectsSection = document.getElementById('Portfolio');
   const desktopProjectsImagesList = document.getElementById('destop_projects_list');
-  for (let i = 0; i < projects.length; i += 1){
+  for (let i = 0; i < projects.length; i += 1) {
     const projectCard = document.createElement('div');
     projectCard.classList.add(projects[i].desktop_data.container);
     const detailsCard = document.createElement('div');
@@ -196,7 +196,7 @@ function appendDesktopProjects() {
     projectTecContainer.classList.add('project_tecs_container');
     const techList = document.createElement('ul');
     techList.classList.add('ul');
-    projects[i].technologies.forEach((t) => { 
+    projects[i].technologies.forEach((t) => {
       const techItem = document.createElement('li');
       techItem.classList.add('li');
       const techName = document.createElement('p');
@@ -223,7 +223,6 @@ function appendDesktopProjects() {
     } else {
       desktopProjectsImagesList.appendChild(projectCard);
     }
-
   }
   projectsSection.appendChild(desktopProjectsImagesList);
 }
@@ -287,7 +286,7 @@ function createProjectDetails(id,desktop) {
   imagesCollection.classList.add('project_image_collection');
   project.images.forEach((i) => {
     const smallImage = document.createElement('div');
-    smallImage.classList.add(`project_small_image`);
+    smallImage.classList.add('project_small_image');
     smallImage.style.backgroundImage = `url(${i})`;
     imagesCollection.appendChild(smallImage);
   });
@@ -321,7 +320,7 @@ function createProjectDetails(id,desktop) {
     const controlsContainer = document.createElement('div');
     controlsContainer.classList.add('project_view_controll_container');
     const prevIconbtn = document.createElement('div');
-    prevIconbtn.classList.add('icon_btn')
+    prevIconbtn.classList.add('icon_btn');
     const previousBtn = document.createElement('button');
     previousBtn.classList.add('project_contols_btn');
     const previousBtnIcon = document.createElement('i');
@@ -335,9 +334,9 @@ function createProjectDetails(id,desktop) {
     nextIconBtn.classList.add('icon_btn');
     const nextBtn = document.createElement('button');
     nextBtn.classList.add('project_contols_btn');
-     const nxtBtnText = document.createTextNode('Next project');
-     nextBtn.appendChild(nxtBtnText);
-     nextIconBtn.appendChild(nextBtn);
+    const nxtBtnText = document.createTextNode('Next project');
+    nextBtn.appendChild(nxtBtnText);
+    nextIconBtn.appendChild(nextBtn);
     const nxtBtnIcon = document.createElement('i');
     nxtBtnIcon.classList.add('forward_icon');
     nextIconBtn.appendChild(nxtBtnIcon);
@@ -350,7 +349,7 @@ function createProjectDetails(id,desktop) {
 
 function onProjectClick(id) {
   const buttonId = id;
-  const projectId = buttonId.replace('project_', '').replace('see_desktop_pop_','');
+  const projectId = buttonId.replace('project_', '').replace('see_desktop_pop_', '');
   const index = parseInt(projectId, 10);
   if (index !== undefined) {
     createProjectDetails(index, id.includes('see_desktop_pop_'));

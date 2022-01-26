@@ -57,7 +57,7 @@
   height: 24px;
   left: 839px;
   top: 38px;
-  font-family: Poppins, Arial, Verdana, Tahoma, sans-serif;
+  font-family: ''Poppins'', Arial, Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -148,7 +148,7 @@
   height: 126px;
   left: 16px;
   top: 224px;
-  font-family: Poppins, Arial, Verdana, Tahoma, sans-serif;
+  font-family: ''Poppins'', Arial, Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -203,7 +203,7 @@
   height: 26.47px;
   left: 58px;
   top: 402px;
-  font-family: Poppins, Arial, Verdana, Tahoma, sans-serif;
+  font-family: ''Poppins'', Arial, Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -319,7 +319,7 @@
 
 .about_paragraph,
 .get_started_paragraph {
-  font-family: Poppins, Arial, Verdana, Tahoma, sans-serif;
+  font-family: 'Poppins', Arial, Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -360,7 +360,7 @@
   justify-content: center;
   border: none;
   color: hsl(0, 0%, 100%);
-  font-family: Poppins, Arial, Verdana, Tahoma, sans-serif;
+  font-family: 'Poppins', Arial, Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -451,7 +451,7 @@
   width: 116px;
   height: 30px;
   left: 66px;
-  font-family: Poppins, Arial, Verdana, Tahoma, sans-serif;
+  font-family: 'Poppins', Arial, Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 20px;
@@ -461,7 +461,7 @@
 }
 
 .my_langaues_text_style {
-  font-family: Poppins, Arial, Verdana, Tahoma, sans-serif;
+  font-family: 'Poppins', Arial, Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -839,7 +839,7 @@
   width: 264px;
   height: 16px;
   left: 20px;
-  font-family: Poppins, Arial, Verdana, Tahoma, sans-serif;
+  font-family: 'Poppins', Arial, Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
@@ -876,7 +876,7 @@
   margin-top: 20px;
   border: 1px solid hsl(0, 0%, 100%);
   background-color: #1a2236;
-  font-family: Poppins, Arial, Verdana, Tahoma, sans-serif;
+  font-family: 'Poppins', Arial, Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -988,7 +988,7 @@
 }
 
 .tech_text {
-  font-family: Poppins, Arial, Verdana, Tahoma, sans-serif;
+  font-family: 'Poppins', Arial, Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 10.3334px;
@@ -1133,7 +1133,7 @@
   height: 15px;
   left: 32px;
   top: 4404px;
-  font-family: Poppins, Arial, Verdana, Tahoma, sans-serif;
+  font-family: 'Poppins', Arial, Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 10px;
@@ -1146,7 +1146,7 @@
   height: 21px;
   left: 32px;
   top: 4423px;
-  font-family: Poppins, Arial, Verdana, Tahoma, sans-serif;
+  font-family: 'Poppins', Arial, Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -1194,7 +1194,7 @@
   top: 4652px;
   background: #1a2236;
   border: none;
-  font-family: Poppins, Arial, Verdana, Tahoma, sans-serif;
+  font-family: 'Poppins', Arial, Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -1244,7 +1244,7 @@
   height: 24px;
   left: 16px;
   top: 4792px;
-  font-family: Poppins, Arial, Verdana, Tahoma, sans-serif;
+  font-family: 'Poppins', Arial, Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -1480,7 +1480,7 @@
 
 .drawer-menu-items li a {
   text-decoration: none;
-  font-family: Poppins, sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -1534,7 +1534,7 @@
 }
 
 article h2 {
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-family: "'Poppins'", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -1554,7 +1554,7 @@ article h2 {
 
 .project_tech_item {
   border: 0.516669px solid #1a2236;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-family: "'Poppins'", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 10.3334px;
@@ -1618,7 +1618,7 @@ article h2 {
 }
 
 .projects_popup_text {
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-family: "'Poppins'", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -1633,7 +1633,7 @@ article h2 {
   align-self: center;
   background: white;
   padding: 10px 0;
-  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-family: "'Poppins'", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -1709,6 +1709,7 @@ article h2 {
     margin-left: 4.7%;
     margin-right: 4.7%;
   }
+
   .pop_up_btn_container {
     flex-direction: row;
     margin-left: 4.7%;
@@ -1725,7 +1726,7 @@ article h2 {
 .project_contols_btn {
   border: none;
   background: none;
-  font-family: Poppins;
+  font-family: ''Poppins'', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
