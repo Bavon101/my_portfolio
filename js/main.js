@@ -245,7 +245,7 @@ function closeDetailsPop() {
   detailsCard.replaceChildren();
 }
 
-function createProjectDetails(id,desktop) {
+function createProjectDetails(id, desktop) {
   const project = projects[id];
   if (project === null || project === undefined) {
     return;
