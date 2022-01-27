@@ -53,8 +53,8 @@ const projects = [{
     details_card: 'project_details_card_mini_1',
     project_name: ['project_name', 'project_name_mini'],
   },
-  },
-  {
+},
+{
   name: 'Bavon Portfolio ',
   description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
           beatae ullam dolore hic repellendus ratione dolorum optio sit iure,
@@ -70,8 +70,8 @@ const projects = [{
     details_card: 'project_details_card_mini_2',
     project_name: ['project_name', 'project_name_mini'],
   },
-  },
-  {
+},
+{
   name: 'Bavon Portfolio ',
   description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
           beatae ullam dolore hic repellendus ratione dolorum optio sit iure,
@@ -87,8 +87,8 @@ const projects = [{
     details_card: 'project_details_card_mini_5',
     project_name: ['project_name', 'project_name_mini'],
   },
-  },
-  {
+},
+{
   name: 'Bavon Portfolio ',
   description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
           beatae ullam dolore hic repellendus ratione dolorum optio sit iure,
@@ -104,8 +104,8 @@ const projects = [{
     details_card: 'project_details_card_mini_4',
     project_name: ['project_name', 'project_name_mini'],
   },
-  },
-  {
+},
+{
   name: 'Bavon Portfolio ',
   description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
           beatae ullam dolore hic repellendus ratione dolorum optio sit iure,
@@ -418,14 +418,14 @@ const userName = document.getElementById('name');
 const userEmail = document.getElementById('email');
 const userMsg = document.getElementById('msg');
 
-function saveData(e) {
+function saveData() {
   const data = {
     userName: userName.value,
     userEmail: userEmail.value,
     userMsg: userMsg.value,
   };
   const stringfiedData = JSON.stringify(data);
-  localStorage.setItem("data", stringfiedData);
+  localStorage.setItem('data', stringfiedData);
 }
 
 function retrieveData() {
