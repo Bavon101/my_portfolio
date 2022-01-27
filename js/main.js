@@ -21,107 +21,107 @@ menu2.addEventListener('click', disappear);
 navBars.addEventListener('click', closeOnAtag, false);
 
 const projects = [{
-    name: 'Bavon Portfolio ',
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+  name: 'Bavon Portfolio ',
+  description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
           beatae ullam dolore hic repellendus ratione dolorum optio sit iure,
           velit consequatur, inventore deserunt, ad fugiat! Ab qui vitae
           laudantium velit tenetur tempore temporibus ex in dolorem nulla! Enim,
           adipisci in!`,
-    images: ['./src/img/svg/project_image.svg', './src/img/svg/project_image.svg', './src/img/svg/project_image.svg', './src/img/svg/project_image.svg'],
-    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    live_link: '#',
-    source_link: '#',
-    desktop_data: {
-      container: 'project_card_macro',
-      details_card: 'project_details_card',
-      project_name: ['project_name'],
-    },
+  images: ['./src/img/svg/project_image.svg', './src/img/svg/project_image.svg', './src/img/svg/project_image.svg', './src/img/svg/project_image.svg'],
+  technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+  live_link: '#',
+  source_link: '#',
+  desktop_data: {
+    container: 'project_card_macro',
+    details_card: 'project_details_card',
+    project_name: ['project_name'],
+  },
+},
+{
+  name: 'Bavon Portfolio ',
+  description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+          beatae ullam dolore hic repellendus ratione dolorum optio sit iure,
+          velit consequatur, inventore deserunt, ad fugiat! Ab qui vitae
+          laudantium velit tenetur tempore temporibus ex in dolorem nulla! Enim,
+          adipisci in!`,
+  images: ['./src/img/svg/project_image_1.svg', './src/img/svg/project_image_1.svg', './src/img/svg/project_image_1.svg', './src/img/svg/project_image_1.svg'],
+  technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+  live_link: '#',
+  source_link: '#',
+  desktop_data: {
+    container: 'project_image_1',
+    details_card: 'project_details_card_mini_1',
+    project_name: ['project_name', 'project_name_mini'],
+  },
   },
   {
-    name: 'Bavon Portfolio ',
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+  name: 'Bavon Portfolio ',
+  description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
           beatae ullam dolore hic repellendus ratione dolorum optio sit iure,
           velit consequatur, inventore deserunt, ad fugiat! Ab qui vitae
           laudantium velit tenetur tempore temporibus ex in dolorem nulla! Enim,
           adipisci in!`,
-    images: ['./src/img/svg/project_image_1.svg', './src/img/svg/project_image_1.svg', './src/img/svg/project_image_1.svg', './src/img/svg/project_image_1.svg'],
-    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    live_link: '#',
-    source_link: '#',
-    desktop_data: {
-      container: 'project_image_1',
-      details_card: 'project_details_card_mini_1',
-      project_name: ['project_name', 'project_name_mini'],
-    },
+  images: ['./src/img/svg/project_image_2.svg', './src/img/svg/project_image_2.svg', './src/img/svg/project_image_2.svg', './src/img/svg/project_image_2.svg'],
+  technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+  live_link: '#',
+  source_link: '#',
+  desktop_data: {
+    container: 'project_image_2',
+    details_card: 'project_details_card_mini_2',
+    project_name: ['project_name', 'project_name_mini'],
+  },
   },
   {
-    name: 'Bavon Portfolio ',
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+  name: 'Bavon Portfolio ',
+  description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
           beatae ullam dolore hic repellendus ratione dolorum optio sit iure,
           velit consequatur, inventore deserunt, ad fugiat! Ab qui vitae
           laudantium velit tenetur tempore temporibus ex in dolorem nulla! Enim,
           adipisci in!`,
-    images: ['./src/img/svg/project_image_2.svg', './src/img/svg/project_image_2.svg', './src/img/svg/project_image_2.svg', './src/img/svg/project_image_2.svg'],
-    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    live_link: '#',
-    source_link: '#',
-    desktop_data: {
-      container: 'project_image_2',
-      details_card: 'project_details_card_mini_2',
-      project_name: ['project_name', 'project_name_mini'],
-    },
+  images: ['./src/img/svg/project_image_3.svg', './src/img/svg/project_image_3.svg', './src/img/svg/project_image_3.svg', './src/img/svg/project_image_3.svg'],
+  technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+  live_link: '#',
+  source_link: '#',
+  desktop_data: {
+    container: 'desktop_image_geometry_4',
+    details_card: 'project_details_card_mini_5',
+    project_name: ['project_name', 'project_name_mini'],
+  },
   },
   {
-    name: 'Bavon Portfolio ',
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+  name: 'Bavon Portfolio ',
+  description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
           beatae ullam dolore hic repellendus ratione dolorum optio sit iure,
           velit consequatur, inventore deserunt, ad fugiat! Ab qui vitae
           laudantium velit tenetur tempore temporibus ex in dolorem nulla! Enim,
           adipisci in!`,
-    images: ['./src/img/svg/project_image_3.svg', './src/img/svg/project_image_3.svg', './src/img/svg/project_image_3.svg', './src/img/svg/project_image_3.svg'],
-    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    live_link: '#',
-    source_link: '#',
-    desktop_data: {
-      container: 'desktop_image_geometry_4',
-      details_card: 'project_details_card_mini_5',
-      project_name: ['project_name', 'project_name_mini'],
-    },
+  images: ['./src/img/svg/project_image_4.svg', './src/img/svg/project_image_4.svg', './src/img/svg/project_image_4.svg', './src/img/svg/project_image_4.svg'],
+  technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+  live_link: '#',
+  source_link: '#',
+  desktop_data: {
+    container: 'project_image_4',
+    details_card: 'project_details_card_mini_4',
+    project_name: ['project_name', 'project_name_mini'],
+  },
   },
   {
-    name: 'Bavon Portfolio ',
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+  name: 'Bavon Portfolio ',
+  description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
           beatae ullam dolore hic repellendus ratione dolorum optio sit iure,
           velit consequatur, inventore deserunt, ad fugiat! Ab qui vitae
           laudantium velit tenetur tempore temporibus ex in dolorem nulla! Enim,
           adipisci in!`,
-    images: ['./src/img/svg/project_image_4.svg', './src/img/svg/project_image_4.svg', './src/img/svg/project_image_4.svg', './src/img/svg/project_image_4.svg'],
-    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    live_link: '#',
-    source_link: '#',
-    desktop_data: {
-      container: 'project_image_4',
-      details_card: 'project_details_card_mini_4',
-      project_name: ['project_name', 'project_name_mini'],
-    },
+  images: ['./src/img/svg/project_image_5.svg', './src/img/svg/project_image_5.svg', './src/img/svg/project_image_5.svg', './src/img/svg/project_image_5.svg'],
+  technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+  live_link: '#',
+  source_link: '#',
+  desktop_data: {
+    container: 'project_image_5',
+    details_card: 'project_details_card_mini',
+    project_name: ['project_name', 'project_name_mini'],
   },
-  {
-    name: 'Bavon Portfolio ',
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-          beatae ullam dolore hic repellendus ratione dolorum optio sit iure,
-          velit consequatur, inventore deserunt, ad fugiat! Ab qui vitae
-          laudantium velit tenetur tempore temporibus ex in dolorem nulla! Enim,
-          adipisci in!`,
-    images: ['./src/img/svg/project_image_5.svg', './src/img/svg/project_image_5.svg', './src/img/svg/project_image_5.svg', './src/img/svg/project_image_5.svg'],
-    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-    live_link: '#',
-    source_link: '#',
-    desktop_data: {
-      container: 'project_image_5',
-      details_card: 'project_details_card_mini',
-      project_name: ['project_name', 'project_name_mini'],
-    },
-  },
+},
 ];
 
 const projectImageClass = 'project_image';
