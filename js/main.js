@@ -369,12 +369,14 @@ document.body.addEventListener('click', listenOnBody);
 const email = document.getElementById('email');
 const form = document.getElementById('contact_form');
 const errorContainer = document.getElementById('error_msg');
+
 function isLowercase(e) {
   if (e.toLowerCase() === e) {
     return true;
   }
   return false;
 }
+
 function alertValidation() {
   if (email.validity.valueMissing) {
     errorContainer.textContent = 'Please provide an email address';
@@ -385,10 +387,12 @@ function alertValidation() {
   }
   errorContainer.style.padding = '4px 0';
 }
+
 function hideValidation() {
   errorContainer.style.padding = '0';
   errorContainer.textContent = '';
 }
+
 function validateEmail(e) {
   const emailValue = email.value;
   if (!isLowercase(emailValue)) {
@@ -398,6 +402,7 @@ function validateEmail(e) {
     hideValidation();
   }
 }
+
 function validateSubmission(e) {
   const emailValue = email.value;
   if (!isLowercase(emailValue)) {
@@ -409,3 +414,34 @@ function validateSubmission(e) {
 }
 email.addEventListener('input', validateEmail);
 form.addEventListener('submit', validateSubmission);
+const userName = document.getElementById('name');
+const userEmail = document.getElementById('email');
+const userMsg = document.getElementById('msg');
+
+function saveData() {
+  const data = {
+    userName: userName.value,
+    userEmail: userEmail.value,
+    userMsg: userMsg.value,
+  };
+  const stringfiedData = JSON.stringify(data);
+  localStorage.setItem('data', stringfiedData);
+}
+
+function retrieveData() {
+  const retrievedData = JSON.parse(localStorage.getItem('data'));
+  userName.value = retrievedData.userName;
+  userEmail.value = retrievedData.userEmail;
+  userMsg.textContent = retrievedData.userMsg;
+}
+
+function initFormData() {
+  if (!localStorage.getItem('data')) {
+    saveData();
+  } else {
+    retrieveData();
+  }
+}
+
+initFormData();
+form.addEventListener('input', saveData);
