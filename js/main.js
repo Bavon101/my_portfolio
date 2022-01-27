@@ -409,3 +409,31 @@ function validateSubmission(e) {
 }
 email.addEventListener('input', validateEmail);
 form.addEventListener('submit', validateSubmission);
+
+const userName = document.getElementById('name');
+const userEmail = document.getElementById('email');
+const userMsg = document.getElementByI('msg');
+
+function saveData() {
+let data = {};
+data.userName = userName.value;
+data.userEmail = userEmail.value;
+data.userMsg = userMsg.value;
+const stringfiedData = JSON.stringify(data);
+localStorage.setItem("data", stringfiedData);
+}
+
+function retrieveData() {
+const retrievedData = JSON.parse(localStorage.getItem('data'));
+userName.value = retrievedData.userName;
+userEmail.value = retrievedData.userEmail;
+userMsg.value = retrievedData.userMsg;
+}
+
+if (!localStorage.getItem('data')) {
+  saveData();
+} else {
+  retrieveData();
+}
+
+form.onchange(saveData) 
