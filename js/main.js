@@ -21,107 +21,107 @@ menu2.addEventListener('click', disappear);
 navBars.addEventListener('click', closeOnAtag, false);
 
 const projects = [{
-  name: 'Bavon Portfolio ',
-  description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+    name: 'Bavon Portfolio ',
+    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
           beatae ullam dolore hic repellendus ratione dolorum optio sit iure,
           velit consequatur, inventore deserunt, ad fugiat! Ab qui vitae
           laudantium velit tenetur tempore temporibus ex in dolorem nulla! Enim,
           adipisci in!`,
-  images: ['./src/img/svg/project_image.svg', './src/img/svg/project_image.svg', './src/img/svg/project_image.svg', './src/img/svg/project_image.svg'],
-  technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-  live_link: '#',
-  source_link: '#',
-  desktop_data: {
-    container: 'project_card_macro',
-    details_card: 'project_details_card',
-    project_name: ['project_name'],
+    images: ['./src/img/svg/project_image.svg', './src/img/svg/project_image.svg', './src/img/svg/project_image.svg', './src/img/svg/project_image.svg'],
+    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    live_link: '#',
+    source_link: '#',
+    desktop_data: {
+      container: 'project_card_macro',
+      details_card: 'project_details_card',
+      project_name: ['project_name'],
+    },
   },
-},
-{
-  name: 'Bavon Portfolio ',
-  description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+  {
+    name: 'Bavon Portfolio ',
+    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
           beatae ullam dolore hic repellendus ratione dolorum optio sit iure,
           velit consequatur, inventore deserunt, ad fugiat! Ab qui vitae
           laudantium velit tenetur tempore temporibus ex in dolorem nulla! Enim,
           adipisci in!`,
-  images: ['./src/img/svg/project_image_1.svg', './src/img/svg/project_image_1.svg', './src/img/svg/project_image_1.svg', './src/img/svg/project_image_1.svg'],
-  technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-  live_link: '#',
-  source_link: '#',
-  desktop_data: {
-    container: 'project_image_1',
-    details_card: 'project_details_card_mini_1',
-    project_name: ['project_name', 'project_name_mini'],
+    images: ['./src/img/svg/project_image_1.svg', './src/img/svg/project_image_1.svg', './src/img/svg/project_image_1.svg', './src/img/svg/project_image_1.svg'],
+    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    live_link: '#',
+    source_link: '#',
+    desktop_data: {
+      container: 'project_image_1',
+      details_card: 'project_details_card_mini_1',
+      project_name: ['project_name', 'project_name_mini'],
+    },
   },
-},
-{
-  name: 'Bavon Portfolio ',
-  description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+  {
+    name: 'Bavon Portfolio ',
+    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
           beatae ullam dolore hic repellendus ratione dolorum optio sit iure,
           velit consequatur, inventore deserunt, ad fugiat! Ab qui vitae
           laudantium velit tenetur tempore temporibus ex in dolorem nulla! Enim,
           adipisci in!`,
-  images: ['./src/img/svg/project_image_2.svg', './src/img/svg/project_image_2.svg', './src/img/svg/project_image_2.svg', './src/img/svg/project_image_2.svg'],
-  technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-  live_link: '#',
-  source_link: '#',
-  desktop_data: {
-    container: 'project_image_2',
-    details_card: 'project_details_card_mini_2',
-    project_name: ['project_name', 'project_name_mini'],
+    images: ['./src/img/svg/project_image_2.svg', './src/img/svg/project_image_2.svg', './src/img/svg/project_image_2.svg', './src/img/svg/project_image_2.svg'],
+    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    live_link: '#',
+    source_link: '#',
+    desktop_data: {
+      container: 'project_image_2',
+      details_card: 'project_details_card_mini_2',
+      project_name: ['project_name', 'project_name_mini'],
+    },
   },
-},
-{
-  name: 'Bavon Portfolio ',
-  description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+  {
+    name: 'Bavon Portfolio ',
+    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
           beatae ullam dolore hic repellendus ratione dolorum optio sit iure,
           velit consequatur, inventore deserunt, ad fugiat! Ab qui vitae
           laudantium velit tenetur tempore temporibus ex in dolorem nulla! Enim,
           adipisci in!`,
-  images: ['./src/img/svg/project_image_3.svg', './src/img/svg/project_image_3.svg', './src/img/svg/project_image_3.svg', './src/img/svg/project_image_3.svg'],
-  technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-  live_link: '#',
-  source_link: '#',
-  desktop_data: {
-    container: 'desktop_image_geometry_4',
-    details_card: 'project_details_card_mini_5',
-    project_name: ['project_name', 'project_name_mini'],
+    images: ['./src/img/svg/project_image_3.svg', './src/img/svg/project_image_3.svg', './src/img/svg/project_image_3.svg', './src/img/svg/project_image_3.svg'],
+    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    live_link: '#',
+    source_link: '#',
+    desktop_data: {
+      container: 'desktop_image_geometry_4',
+      details_card: 'project_details_card_mini_5',
+      project_name: ['project_name', 'project_name_mini'],
+    },
   },
-},
-{
-  name: 'Bavon Portfolio ',
-  description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+  {
+    name: 'Bavon Portfolio ',
+    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
           beatae ullam dolore hic repellendus ratione dolorum optio sit iure,
           velit consequatur, inventore deserunt, ad fugiat! Ab qui vitae
           laudantium velit tenetur tempore temporibus ex in dolorem nulla! Enim,
           adipisci in!`,
-  images: ['./src/img/svg/project_image_4.svg', './src/img/svg/project_image_4.svg', './src/img/svg/project_image_4.svg', './src/img/svg/project_image_4.svg'],
-  technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-  live_link: '#',
-  source_link: '#',
-  desktop_data: {
-    container: 'project_image_4',
-    details_card: 'project_details_card_mini_4',
-    project_name: ['project_name', 'project_name_mini'],
+    images: ['./src/img/svg/project_image_4.svg', './src/img/svg/project_image_4.svg', './src/img/svg/project_image_4.svg', './src/img/svg/project_image_4.svg'],
+    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    live_link: '#',
+    source_link: '#',
+    desktop_data: {
+      container: 'project_image_4',
+      details_card: 'project_details_card_mini_4',
+      project_name: ['project_name', 'project_name_mini'],
+    },
   },
-},
-{
-  name: 'Bavon Portfolio ',
-  description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+  {
+    name: 'Bavon Portfolio ',
+    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
           beatae ullam dolore hic repellendus ratione dolorum optio sit iure,
           velit consequatur, inventore deserunt, ad fugiat! Ab qui vitae
           laudantium velit tenetur tempore temporibus ex in dolorem nulla! Enim,
           adipisci in!`,
-  images: ['./src/img/svg/project_image_5.svg', './src/img/svg/project_image_5.svg', './src/img/svg/project_image_5.svg', './src/img/svg/project_image_5.svg'],
-  technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-  live_link: '#',
-  source_link: '#',
-  desktop_data: {
-    container: 'project_image_5',
-    details_card: 'project_details_card_mini',
-    project_name: ['project_name', 'project_name_mini'],
+    images: ['./src/img/svg/project_image_5.svg', './src/img/svg/project_image_5.svg', './src/img/svg/project_image_5.svg', './src/img/svg/project_image_5.svg'],
+    technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
+    live_link: '#',
+    source_link: '#',
+    desktop_data: {
+      container: 'project_image_5',
+      details_card: 'project_details_card_mini',
+      project_name: ['project_name', 'project_name_mini'],
+    },
   },
-},
 ];
 
 const projectImageClass = 'project_image';
@@ -369,12 +369,14 @@ document.body.addEventListener('click', listenOnBody);
 const email = document.getElementById('email');
 const form = document.getElementById('contact_form');
 const errorContainer = document.getElementById('error_msg');
+
 function isLowercase(e) {
   if (e.toLowerCase() === e) {
     return true;
   }
   return false;
 }
+
 function alertValidation() {
   if (email.validity.valueMissing) {
     errorContainer.textContent = 'Please provide an email address';
@@ -385,10 +387,12 @@ function alertValidation() {
   }
   errorContainer.style.padding = '4px 0';
 }
+
 function hideValidation() {
   errorContainer.style.padding = '0';
   errorContainer.textContent = '';
 }
+
 function validateEmail(e) {
   const emailValue = email.value;
   if (!isLowercase(emailValue)) {
@@ -398,6 +402,7 @@ function validateEmail(e) {
     hideValidation();
   }
 }
+
 function validateSubmission(e) {
   const emailValue = email.value;
   if (!isLowercase(emailValue)) {
@@ -409,31 +414,34 @@ function validateSubmission(e) {
 }
 email.addEventListener('input', validateEmail);
 form.addEventListener('submit', validateSubmission);
-
 const userName = document.getElementById('name');
 const userEmail = document.getElementById('email');
-const userMsg = document.getElementByI('msg');
+const userMsg = document.getElementById('msg');
 
-function saveData() {
-let data = {};
-data.userName = userName.value;
-data.userEmail = userEmail.value;
-data.userMsg = userMsg.value;
-const stringfiedData = JSON.stringify(data);
-localStorage.setItem("data", stringfiedData);
+function saveData(e) {
+  const data = {
+    userName: userName.value,
+    userEmail: userEmail.value,
+    userMsg: userMsg.value,
+  };
+  const stringfiedData = JSON.stringify(data);
+  localStorage.setItem("data", stringfiedData);
 }
 
 function retrieveData() {
-const retrievedData = JSON.parse(localStorage.getItem('data'));
-userName.value = retrievedData.userName;
-userEmail.value = retrievedData.userEmail;
-userMsg.value = retrievedData.userMsg;
+  const retrievedData = JSON.parse(localStorage.getItem('data'));
+  userName.value = retrievedData.userName;
+  userEmail.value = retrievedData.userEmail;
+  userMsg.textContent = retrievedData.userMsg;
 }
 
-if (!localStorage.getItem('data')) {
-  saveData();
-} else {
-  retrieveData();
+function initFormData() {
+  if (!localStorage.getItem('data')) {
+    saveData();
+  } else {
+    retrieveData();
+  }
 }
 
-form.onchange(saveData) 
+initFormData();
+form.addEventListener('input', saveData);
