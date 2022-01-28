@@ -210,7 +210,7 @@ function appendDesktopProjects() {
     detailsCard.appendChild(projectTecContainer);
     const seeProjectBtn = document.createElement('button');
     seeProjectBtn.classList.add('see_project');
-    seeProjectBtn.setAttribute('id', `see_desktop_pop_${i}`);
+    seeProjectBtn.setAttribute('id', `see_desktop_pop_${0}`);
     const btnText = document.createTextNode('See this project');
     seeProjectBtn.appendChild(btnText);
     const btnIcon = document.createElement('i');
