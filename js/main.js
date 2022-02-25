@@ -21,16 +21,16 @@ menu2.addEventListener('click', disappear);
 navBars.addEventListener('click', closeOnAtag, false);
 
 const projects = [{
-  name: 'Bavon Portfolio ',
+  name: 'To do List ',
   description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
           beatae ullam dolore hic repellendus ratione dolorum optio sit iure,
           velit consequatur, inventore deserunt, ad fugiat! Ab qui vitae
           laudantium velit tenetur tempore temporibus ex in dolorem nulla! Enim,
           adipisci in!`,
-  images: ['./src/img/svg/project_image.svg', './src/img/svg/project_image.svg', './src/img/svg/project_image.svg', './src/img/svg/project_image.svg'],
-  technologies: ['HTML/CSS', 'Ruby on Rails', 'JavaScript'],
-  live_link: '#',
-  source_link: '#',
+  images: ['./src/img/projects/todo/todo_0_0.PNG', './src/img/projects/todo/todo_0_1.PNG', './src/img/projects/todo/todo_0_2.PNG', './src/img/projects/todo/todo_0_3.PNG'],
+  technologies: ['HTML/CSS', 'JavaScript'],
+  live_link: 'https://bavon101.github.io/todoList/dist/',
+  source_link: 'https://github.com/Bavon101/todoList',
   desktop_data: {
     container: 'project_card_macro',
     details_card: 'project_details_card',
@@ -185,6 +185,9 @@ function appendDesktopProjects() {
   for (let i = 0; i < projects.length; i += 1) {
     const projectCard = document.createElement('div');
     projectCard.classList.add(projects[i].desktop_data.container);
+    projectCard.style.background = `url(${projects[i].images[0]})`;
+    projectCard.style.backgroundSize = 'cover';
+    projectCard.style.backgroundRepeat = 'no-repeat';
     const detailsCard = document.createElement('div');
     detailsCard.classList.add(projects[i].desktop_data.details_card);
     const projectName = document.createElement('h2');
@@ -299,16 +302,18 @@ function createProjectDetails(id, desktop) {
   projectDataCard.appendChild(projectDescription);
   const btnContainer = document.createElement('div');
   btnContainer.classList.add('pop_up_btn_container');
-  const viewLiveButton = document.createElement('button');
+  const viewLiveButton = document.createElement('a');
   viewLiveButton.classList.add('reversed_button');
+  viewLiveButton.setAttribute('href', project.live_link);
   const viewBtnText = document.createTextNode('See live');
   viewLiveButton.appendChild(viewBtnText);
   const viewBtnIcon = document.createElement('i');
   viewBtnIcon.classList.add('project_live_btn');
   viewLiveButton.appendChild(viewBtnIcon);
   btnContainer.appendChild(viewLiveButton);
-  const viewSourceBtn = document.createElement('button');
+  const viewSourceBtn = document.createElement('a');
   viewSourceBtn.classList.add('reversed_button');
+  viewSourceBtn.setAttribute('href', project.source_link);
   const viewSourceTxt = document.createTextNode('See source');
   viewSourceBtn.appendChild(viewSourceTxt);
   const viewSourceIcon = document.createElement('i');
