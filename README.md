@@ -8,6 +8,7 @@
 ## You can access the live portfolio [here](https://bavon101.github.io/my_portfolio/#About)
 
 Additional description about the project and its features.
+This is my portfolio site, it's based on a preexisting `figma` design. The projecs are `static` code based, with each project being added from the `source ` code and pushed , then published by `gh-pages.
 ## Screenshots Desktop 📷
 ![screenshot](./src/img/desktop_hello.PNG)
 ![screenshot](./src/img/desktop_projects.PNG)
